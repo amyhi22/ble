@@ -1,0 +1,858 @@
+{
+  "general": {
+    "app_name": "SafeGrow",
+    "loading": "Loading...",
+    "retry": "Retry",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "error": "Error",
+    "success": "Success",
+    "no_data": "No information available"
+  },
+  "splash": {
+    "tagline": "Smart Crop Monitoring"
+  },
+  "welcome": {
+    "title": "Smart Farming\nMade Simple",
+    "subtitle": "Detect crop diseases instantly using artificial intelligence.",
+    "get_started": "Get Started"
+  },
+  "login": {
+    "welcome_back": "Welcome Back",
+    "subtitle": "Sign in to access your dashboard",
+    "email": "Email",
+    "email_hint": "farmer@example.com",
+    "password": "Password",
+    "password_hint": "••••••••",
+    "forgot_password": "Forgot your password?",
+    "login_btn": "Sign In",
+    "no_account": "Don't have an account yet? ",
+    "create_account": "Create account",
+    "password_reset_soon": "Password reset will be available soon",
+    "too_many_attempts": "Too many attempts. Try again in",
+    "minutes": "minutes",
+    "minute": "minute"
+  },
+  "validation": {
+    "email_required": "Email is required",
+    "email_invalid": "Enter a valid email address",
+    "password_required": "Password is required",
+    "password_too_short": "Password must be at least 6 characters"
+  },
+  "register": {
+    "title": "Create Account",
+    "subtitle": "Join AgroScan to monitor your farm's health",
+    "username": "Username",
+    "username_hint": "farmer_john",
+    "confirm_password": "Confirm Password",
+    "confirm_password_hint": "Re-enter your password",
+    "password_hint_long": "At least 8 characters, one uppercase letter, one number",
+    "password_requirements": "• At least 8 characters\n• At least one uppercase letter\n• At least one number",
+    "already_account": "Already have an account? ",
+    "sign_in": "Sign In",
+    "account_created": "✓ Account created! Please sign in."
+  },
+  "home": {
+    "greeting": "Hello 👋",
+    "title": "Crop Monitoring System",
+    "weather_load_error": "Failed to load weather",
+    "alert_tooltip": "Disease Alerts"
+  },
+  "profile": {
+    "title": "Profile",
+    "member_since": "Member since",
+    "scan_history": "Scan History",
+    "scan_history_subtitle": "View your saved detections",
+    "settings": "Settings",
+    "settings_subtitle": "Manage your account preferences",
+    "help_support": "Help & Support",
+    "help_support_subtitle": "Get help with the app",
+    "logout": "Sign Out",
+    "logout_confirm_title": "Sign Out?",
+    "logout_confirm_body": "Are you sure you want to sign out?",
+    "logout_success": "Signed out successfully",
+    "not_logged_in": "Not signed in",
+    "go_to_login": "Go to Sign In",
+    "logout_title": "Sign Out?",
+    "logout_message": "Are you sure you want to sign out?",
+    "language": "Language",
+    "language_subtitle": "Choose your preferred language"
+  },
+  "language": {
+    "title": "Language",
+    "subtitle": "Choose your preferred language",
+    "english": "English",
+    "french": "French",
+    "arabic": "Arabic"
+  },
+  "treatment": {
+    "symptoms": "Symptoms",
+    "treatments": "Treatments",
+    "medicines": "Recommended Products",
+    "prevention_tips": "Prevention Tips",
+    "advice": "Prevention Tips",
+    "share_coming_soon": "Sharing will be available soon",
+    "crop_healthy": "Crop is healthy",
+    "disease_detected": "Disease detected",
+    "confidence": "94% Confidence",
+    "warning_message": "Take quick action within 48 hours to prevent further crop losses."
+  },
+  "camera": {
+    "title": "Crop Scanner",
+    "capture_photo": "Take Photo",
+    "upload_photo": "Upload Photo",
+    "analyzing": "Analyzing...",
+    "confidence": "Confidence: {percent}%",
+    "view_treatment": "View Treatment Details",
+    "scanner": "Crop Scanner",
+    "gallery": "Gallery",
+    "treatment_details": "View Treatment Details"
+  },
+  "Yellow Rust": {
+    "name": "Yellow Rust",
+    "symptoms": {
+      "0": "Yellow-orange pustules on leaves",
+      "1": "Linear arrangement of spores",
+      "2": "Premature leaf yellowing",
+      "3": "Reduced grain yield"
+    },
+    "treatments": {
+      "0": "Apply fungicides at first signs of infection",
+      "1": "Use resistant wheat varieties",
+      "2": "Remove infected crop residues",
+      "3": "Avoid excessive nitrogen fertilization"
+    },
+    "medicines": {
+      "0": "Propiconazole 25% EC",
+      "1": "Tebuconazole 250 EC",
+      "2": "Azoxystrobin 23% SC",
+      "3": "Mancozeb 75% WP (preventive)"
+    },
+    "advice": {
+      "0": "Plant early to avoid peak rust season",
+      "1": "Ensure proper field drainage",
+      "2": "Monitor weather for high-humidity periods",
+      "3": "Rotate with non-host crops"
+    }
+  },
+  "Black Rust": {
+    "name": "Black Rust",
+    "symptoms": {
+      "0": "The first stage appears as small pale yellow spots.",
+      "1": "Followed by elongated reddish-brown pustules on leaf sheaths and stems.",
+      "2": "The second stage shows black shiny pustules on stems and spike sheaths.",
+      "3": "Infected plants are short, prone to lodging, and may die in severe cases."
+    },
+    "treatments": {
+      "0": "Preventive spraying before severe spread using systemic fungicides.",
+      "1": "Repeat spraying every 14 days.",
+      "2": "Use fine spray coverage to reach the stem.",
+      "3": "Remove alternate host plants if present."
+    },
+    "medicines": {
+      "0": "Tebuconazole 250 EC",
+      "1": "Propiconazole 25% EC",
+      "2": "Trifloxystrobin + Tebuconazole (Nativo)"
+    },
+    "advice": {
+      "0": "Rotate crops for 2-3 years with non-host crops, avoid previous wheat residues.",
+      "1": "Plant resistant varieties such as Morocco or Little Club.",
+      "2": "Balanced fertilization and reduce excessive nitrogen.",
+      "3": "Regular weather monitoring, plant slightly late to avoid spring infection."
+    }
+  },
+  "Aphid": {
+    "name": "Aphid",
+    "symptoms": {
+      "0": "Aphids cluster on leaves and stems causing curling and yellowing.",
+      "1": "Produce honeydew that attracts ants and black mold.",
+      "2": "Heavy infestations reduce growth and yield."
+    },
+    "treatments": {
+      "0": "Spray systemic insecticides when economic threshold is reached.",
+      "1": "Repeat treatment after 7-10 days if necessary."
+    },
+    "medicines": {
+      "0": "Consult a local agricultural specialist for registered products."
+    },
+    "advice": {
+      "0": "Encourage natural predators such as ladybugs.",
+      "1": "Regularly monitor fields using yellow sticky traps.",
+      "2": "Avoid excessive nitrogen fertilization."
+    }
+  },
+  "Blast": {
+    "name": "Blast",
+    "symptoms": {
+      "0": "Initial symptoms on leaves appear as water-soaked gray or oval spots.",
+      "1": "They become gray or brown with dark edges or a yellow halo.",
+      "2": "On spikes, partial or full bleaching appears starting from a gray-black infection point.",
+      "3": "Spikes become white, shriveled, and empty.",
+      "4": "These symptoms usually appear during flowering in warm, humid conditions."
+    },
+    "treatments": {
+      "0": "Main treatment relies on systemic fungicides.",
+      "1": "Spray twice with a 7-10 day interval.",
+      "2": "Effectiveness is reduced in high humidity conditions.",
+      "3": "Seed treatment before planting helps reduce spread."
+    },
+    "medicines": {
+      "0": "Tricyclazole 75% WP",
+      "1": "Isoprothiolane 40% EC",
+      "2": "Propiconazole 25% EC"
+    },
+    "advice": {
+      "0": "Plant resistant varieties and adjust sowing date.",
+      "1": "Use certified treated seeds, avoid dense planting and excessive nitrogen.",
+      "2": "Proper crop rotation and weather monitoring for preventive spraying."
+    }
+  },
+  "Brown Rust": {
+    "name": "Brown Rust",
+    "symptoms": {
+      "0": "The disease starts with small orange or light brown spots on the lower leaf surface.",
+      "1": "These spots gradually expand into orange powdery pustules.",
+      "2": "As the disease progresses, pustules turn dark brown and the epidermis may rupture.",
+      "3": "Severe infections cause leaf drying, yellowing, and smaller spikes."
+    },
+    "treatments": {
+      "0": "Immediate spraying with systemic fungicides at first symptoms.",
+      "1": "Repeat spraying after 10-14 days if high humidity persists.",
+      "2": "Spray in early morning or evening with sufficient water volume.",
+      "3": "Remove and destroy infected plants early in small fields."
+    },
+    "medicines": {
+      "0": "Tebuconazole 250 EC",
+      "1": "Propiconazole 25% EC",
+      "2": "Azoxystrobin 23% SC"
+    },
+    "advice": {
+      "0": "Avoid dense planting.",
+      "1": "Plant resistant varieties.",
+      "2": "Weekly monitoring especially at 20-25°C and humidity >80%.",
+      "3": "Rotate with legumes and dispose of crop residues."
+    }
+  },
+  "Common Root Rot": {
+    "name": "Common Root Rot",
+    "symptoms": {
+      "0": "Symptoms begin at the seedling stage with wilting and browning of the stem base.",
+      "1": "Plants pull out easily and are pale yellow, with shriveled spikes.",
+      "2": "Results in stunting, weak spikes, and reduced yield."
+    },
+    "treatments": {
+      "0": "Seed treatment before planting with systemic fungicides.",
+      "1": "Apply soil drench or root irrigation in early stages if symptoms appear.",
+      "2": "Improve drainage and remove infected plants in small fields.",
+      "3": "Use Bacillus subtilis as a biological option."
+    },
+    "medicines": {
+      "0": "Carboxin + Thiram (Vitavax 200)",
+      "1": "Tebuconazole seed treatment",
+      "2": "Bacillus subtilis"
+    },
+    "advice": {
+      "0": "Rotate crops for 2-3 years with non-host crops such as legumes.",
+      "1": "Use certified pre-treated seeds and balanced fertilization rich in phosphorus and potassium.",
+      "2": "Improve aeration and avoid excessive moisture."
+    }
+  },
+  "Fusarium Head Blight": {
+    "name": "Fusarium Head Blight",
+    "symptoms": {
+      "0": "Seedling blight may occur, but the most visible symptom is spike bleaching.",
+      "1": "Spikes turn pinkish-light brown in warm, humid weather with visible fungal growth.",
+      "2": "Grains are small, shriveled, and may be contaminated with dangerous DON toxins."
+    },
+    "treatments": {
+      "0": "Immediate spraying with systemic fungicides at the start of flowering.",
+      "1": "Repeat spraying after 3-5 days under high humidity.",
+      "2": "Seed treatment before planting and reduce prolonged moisture."
+    },
+    "medicines": {
+      "0": "Tebuconazole 250 EC",
+      "1": "Miconazole 9% EC",
+      "2": "Celest Extra FS"
+    },
+    "advice": {
+      "0": "Plant resistant varieties such as Sumai 3 or Ernie.",
+      "1": "Avoid late irrigation or excessive nitrogen.",
+      "2": "Monitor weather during flowering and use clean seeds.",
+      "3": "Split irrigation to avoid prolonged moisture."
+    }
+  },
+  "Leaf Blight": {
+    "name": "Leaf Blight",
+    "symptoms": {
+      "0": "Symptoms begin as small dark brown to black spots on leaves and bases.",
+      "1": "They expand into oval or elongated spots that merge on the leaf blade.",
+      "2": "Results in short plants and small or empty grains."
+    },
+    "treatments": {
+      "0": "Immediate spraying with systemic fungicides at first spots.",
+      "1": "Repeat every 10-14 days under high humidity.",
+      "2": "Use sufficient water volume with adjuvants to improve adhesion.",
+      "3": "Remove infected leaves in small fields and improve ventilation."
+    },
+    "medicines": {
+      "0": "Tebuconazole 250 EC",
+      "1": "Propiconazole 25% EC",
+      "2": "Dividend"
+    },
+    "advice": {
+      "0": "Use resistant varieties and pre-treated seeds.",
+      "1": "Rotate crops 2-3 years with legumes.",
+      "2": "Avoid excessive nitrogen and increase phosphorus and potassium.",
+      "3": "Moderate irrigation with good ventilation and weekly spring monitoring."
+    }
+  },
+  "Mildew": {
+    "name": "Powdery Mildew",
+    "symptoms": {
+      "0": "Small yellow spots appear on lower leaves in early growth stages.",
+      "1": "A white powdery layer develops on leaves, stems, and spikes.",
+      "2": "The coating turns brown or gray, causing leaf drying."
+    },
+    "treatments": {
+      "0": "Apply preventive or curative fungicides at first signs of infection.",
+      "1": "Repeat treatment every 7-10 days in humid conditions.",
+      "2": "Neem oil or sodium bicarbonate solutions can be used in small fields."
+    },
+    "medicines": {
+      "0": "Consult local agricultural recommendations for registered fungicides."
+    },
+    "advice": {
+      "0": "Avoid dense planting and excessive nitrogen fertilization.",
+      "1": "Rotate crops and remove volunteer wheat.",
+      "2": "Use treated seeds and regularly monitor humidity levels."
+    }
+  },
+  "Mite": {
+    "name": "Mite",
+    "symptoms": {
+      "0": "Mites are invisible to the naked eye, but symptoms include pale, curled leaf tips.",
+      "1": "Leaves may curl into a tube shape and plants may be stunted.",
+      "2": "Heavy infestations significantly reduce yield."
+    },
+    "treatments": {
+      "0": "Treatment is difficult, but miticides can be sprayed when economic threshold is exceeded.",
+      "1": "Repeat every 7-10 days with fine spray.",
+      "2": "Destroy volunteer wheat and use mineral oils when needed."
+    },
+    "medicines": {
+      "0": "Abamectin 1.8% EC",
+      "1": "Bifenazate 24% SC",
+      "2": "Mineral oil spray"
+    },
+    "advice": {
+      "0": "Destroy volunteer wheat and weeds before planting.",
+      "1": "Delay planting slightly when needed and avoid adjacent host crops.",
+      "2": "Release natural predators such as ladybugs if possible."
+    }
+  },
+  "Septoria": {
+    "name": "Septoria",
+    "symptoms": {
+      "0": "Symptoms start on lower leaves as small water-soaked yellow spots.",
+      "1": "They expand into longitudinal or oval spots with a wide yellow halo.",
+      "2": "Spots merge causing leaf death and shedding."
+    },
+    "treatments": {
+      "0": "Preventive-curative spraying starting from late winter or at first spots.",
+      "1": "Repeat 2-3 times every 10-14 days under high humidity.",
+      "2": "Use 300-400 L/ha with adjuvants to reach lower leaves."
+    },
+    "medicines": {
+      "0": "Propiconazole 25% EC",
+      "1": "Tebuconazole 250 EC",
+      "2": "Azoxystrobin + Cyproconazole"
+    },
+    "advice": {
+      "0": "Three-year rotation with legumes or brassicas.",
+      "1": "Moderate irrigation and avoid prolonged moisture.",
+      "2": "Weekly spring monitoring at 15-25°C and high humidity.",
+      "3": "Avoid dense planting and excessive nitrogen."
+    }
+  },
+  "Healthy": {
+    "name": "Healthy Plant",
+    "symptoms": {
+      "0": "No disease symptoms"
+    },
+    "treatments": {},
+    "medicines": {},
+    "advice": {
+      "0": "Continue regular monitoring",
+      "1": "Maintain good irrigation practices"
+    }
+  },
+  "Smut": {
+    "name": "Smut",
+    "symptoms": {
+      "0": "Masses of powdery black spores replacing grain kernels.",
+      "1": "Infected plants may show stunted growth.",
+      "2": "Soot-like black layer on spikes and seeds."
+    },
+    "treatments": {
+      "0": "Use certified disease-free seeds.",
+      "1": "Apply fungicide seed treatments before planting.",
+      "2": "Remove and destroy infected plant material."
+    },
+    "medicines": {
+      "0": "Consult a local agricultural specialist for registered fungicides."
+    },
+    "advice": {
+      "0": "Rotate crops to break the disease cycle.",
+      "1": "Avoid planting in fields with a history of smut.",
+      "2": "Regularly monitor fields and remove infected plants early."
+    }
+  },
+  "Stem fly": {
+    "name": "Stem Fly",
+    "symptoms": {
+      "0": "Young leaves turn yellow and wilt (dead heart symptoms).",
+      "1": "Larvae tunnel inside the stem causing internal damage.",
+      "2": "Infected tillers die before heading."
+    },
+    "treatments": {
+      "0": "Apply insecticides during early tillering stage.",
+      "1": "Use systemic insecticides for effective control.",
+      "2": "Remove and destroy damaged tillers immediately."
+    },
+    "medicines": {
+      "0": "Consult a local agricultural specialist for registered insecticides."
+    },
+    "advice": {
+      "0": "Early sowing to avoid peak fly population periods.",
+      "1": "Avoid late sowing which increases susceptibility.",
+      "2": "Regularly monitor crops for early detection."
+    }
+  },
+  "Tan spot": {
+    "name": "Tan Spot",
+    "symptoms": {
+      "0": "Tan to brown oval lesions with a yellow halo on leaves.",
+      "1": "Lesions may coalesce causing large dead areas on leaves.",
+      "2": "Severe infections reduce photosynthesis and yield."
+    },
+    "treatments": {
+      "0": "Apply foliar fungicides at first signs of infection.",
+      "1": "Use resistant varieties if available.",
+      "2": "Remove crop residues after harvest to reduce infection source."
+    },
+    "medicines": {
+      "0": "Consult a local agricultural specialist for registered fungicides."
+    },
+    "advice": {
+      "0": "Rotate crops to reduce soil infection sources.",
+      "1": "Avoid excessive irrigation that promotes leaf wetness.",
+      "2": "Monitor fields regularly especially in humid conditions."
+    }
+  },
+  "history": {
+    "title": "Recent Analyses",
+    "view_all": "View All",
+    "no_data": "No analyses yet",
+    "confidence": "Confidence: ",
+    "healthy": "Healthy",
+    "detected": "Detected",
+    "warning_48h": "Act quickly within 48 hours to prevent further losses.",
+    "latest_checks": "Latest Checks",
+    "no_checks_yet": "No checks yet",
+    "saving": "Saving...",
+    "saved": "Saved to history",
+    "save_error": "Save failed: {error}",
+    "save_to_history": "Save to History"
+  },
+  "irrigation": {
+    "title": "Irrigation Recommendation",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "weather": "Weather Condition",
+    "recommended": "Irrigation recommended due to heat and low humidity",
+    "not_needed": "No irrigation needed at this time",
+    "detected": "Detected",
+    "warning": "Warning",
+    "recommendation": "Irrigation Recommendation",
+    "recommended_message": "Irrigation is advised due to high temperature and low humidity",
+    "no_need_message": "No irrigation needed at this time",
+    "loading": "Calculating irrigation recommendations...",
+    "load_failed": "Failed to load irrigation recommendations",
+    "smart_title": "Smart Irrigation Recommendations",
+    "smart_subtitle": "AI analysis based on weather and disease",
+    "intensity": "Irrigation Intensity",
+    "wind": "Wind",
+    "frequency": "Irrigation Frequency",
+    "suggested_actions": "Recommended Actions"
+  },
+  "irrigation_card": {
+    "loading": "Calculating irrigation recommendations...",
+    "load_failed": "Failed to load recommendations",
+    "retry": "Retry",
+    "no_data": "No data available",
+    "smart_irrigation": "Smart Irrigation Recommendations",
+    "analysis": "AI analysis based on weather and disease",
+    "intensity": "Irrigation Intensity",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "frequency": "Irrigation Frequency",
+    "actions": "Recommended Actions",
+    "ai": "AI"
+  },
+  "expert": {
+    "title": "Need Expert Help?",
+    "get_guidance": "Get guidance about",
+    "general_guidance": "Get expert advice for your plant health",
+    "disease_guidance": "Get expert advice about {disease}",
+    "connect_now": "Connect Now",
+    "need_help_title": "Need Expert Help?",
+    "personalized_guidance": "Get personalized guidance for {diseaseName} from our agricultural experts.",
+    "connect_specialists": "Connect with our agricultural specialists for advice about your crops.",
+    "contact": "Contact an Expert"
+  },
+  "notifications": {
+    "content": {
+      "rust_alert": "High risk of rust detected in your area",
+      "mildew_alert": "Mildew risk increased due to humidity",
+      "aphids_alert": "Aphid infestation alert - take preventive action",
+      "general_alert": "New disease alert on your wheat crops"
+    }
+  },
+  "alerts": {
+    "title": "Disease Alerts",
+    "subtitle": "Based on weather forecasts for the next 7 days",
+    "no_risks_title": "No High Risks",
+    "no_risks_body": "Next week's weather conditions are favorable for crops.",
+    "load_error": "Failed to fetch weather data",
+    "risk_triggers": "Risk Factors:",
+    "risk_prevention": "Preventive Actions:",
+    "level_low": "Low",
+    "level_moderate": "Moderate",
+    "level_high": "High",
+    "level_critical": "Critical",
+    "yellow_rust": {
+      "name": "Yellow Rust",
+      "trigger_crit_days": "3+ days with humidity >80% and temperature 2–20°C",
+      "trigger_crit_day": "At least one day with high humidity and ideal infection temperature",
+      "trigger_opt_days": "4+ suitable days for spore germination (humidity >70%, 2–20°C)",
+      "trigger_opt_day": "Several days with suitable conditions for spore germination",
+      "trigger_temp_optimal": "Average temperature 10–15°C: ideal for yellow rust spread",
+      "trigger_temp_acceptable": "Average temperature 15–20°C: suitable for yellow rust development",
+      "trigger_temp_inhibit": "Temperature above 21°C: limits yellow rust development",
+      "prevention_0": "Apply preventive fungicide (propiconazole or tebuconazole) before infection",
+      "prevention_1": "Use resistant or tolerant wheat varieties",
+      "prevention_2": "Monitor fields weekly and record early symptoms",
+      "prevention_3": "Remove and dispose of infected crop residues after harvest",
+      "prevention_4": "Avoid excessive nitrogen fertilization which promotes soft leaf tissue"
+    },
+    "brown_rust": {
+      "name": "Brown Rust",
+      "trigger_infection_days_high": "4+ days with humidity >60% and temperature 8–16°C: high infection risk",
+      "trigger_infection_days_low": "2–3 days with humidity >60% and temperature 8–16°C: moderate risk",
+      "trigger_high_hum": "3+ days with humidity >80% and temperature 8–25°C: very favorable for spread",
+      "trigger_fav_days_high": "5+ days with humidity >60% and temperature 8–25°C",
+      "trigger_fav_days_low": "3–4 days with humidity >60% and temperature 8–25°C",
+      "trigger_temp_optimal": "Average temperature 15–25°C: ideal for brown rust development",
+      "trigger_temp_acceptable": "Average temperature 8–15°C: suitable for brown rust development",
+      "prevention_0": "Apply fungicide at first signs of orange pustules on leaves",
+      "prevention_1": "Use certified resistant wheat varieties",
+      "prevention_2": "Avoid dense planting to improve airflow",
+      "prevention_3": "Remove infected residues and rotate with legumes"
+    },
+    "stem_rust": {
+      "name": "Stem Rust",
+      "trigger_hot_humid_high": "3+ days at 18–30°C and humidity >60%: critical conditions",
+      "trigger_hot_humid_low": "At least one day with hot, humid conditions favorable for stem rust",
+      "trigger_night_opt": "3+ nights at 15–22°C and humidity >55%: ideal for spore germination",
+      "trigger_fav_days": "4+ days at 15–30°C and humidity >55%",
+      "trigger_avg_optimal": "Average conditions (humidity >65%, temperature 18–30°C) very favorable",
+      "prevention_0": "Apply triazole or strobilurin fungicide at first signs on stems",
+      "prevention_1": "Use Ug99-resistant varieties if available in your region",
+      "prevention_2": "Avoid late planting that exposes crops to warm spring conditions",
+      "prevention_3": "Monitor and remove Berberis (barberry), the alternate host"
+    },
+    "septoria": {
+      "name": "Septoria Leaf Blotch",
+      "trigger_epic_high": "3+ days with humidity >85% and temperature 15–25°C: epidemic conditions",
+      "trigger_epic_low": "At least one day with very high humidity and optimal temperature",
+      "trigger_very_hum_high": "4+ days with humidity ≥90%: very high risk of Septoria spread",
+      "trigger_very_hum_low": "2–3 days with humidity ≥90%",
+      "trigger_fav_days": "4+ days with humidity >70% and temperature 10–25°C",
+      "trigger_temp_optimal": "Average temperature 15–20°C: ideal for Septoria tritici",
+      "trigger_temp_acceptable": "Average temperature 20–25°C: still suitable for Septoria",
+      "trigger_temp_stop": "Average temperature below 4°C: disease development stops",
+      "prevention_0": "Apply propiconazole or tebuconazole at GS31–37 (stem elongation)",
+      "prevention_1": "Use partially resistant varieties and rotate with non-cereal crops",
+      "prevention_2": "Avoid dense planting and excessive nitrogen fertilization",
+      "prevention_3": "Remove crop residues to reduce infection source",
+      "prevention_4": "Apply a second fungicide treatment after 14 days if humidity remains high"
+    },
+    "fusarium": {
+      "name": "Fusarium Head Blight",
+      "trigger_rapid": "2+ days with humidity >95% and temperature 16–30°C: rapid spread risk",
+      "trigger_crit_high": "2+ days with humidity >90% and temperature 15–30°C: critical risk",
+      "trigger_crit_low": "One day with humidity >90% and temperature 15–30°C: notable risk",
+      "trigger_fav_high": "3+ days with humidity ≥70% and temperature 15–30°C",
+      "trigger_temp_optimal": "Average temperature 25–30°C: ideal for Fusarium and mycotoxin production",
+      "trigger_temp_acceptable": "Average temperature 20–25°C: suitable for Fusarium development",
+      "prevention_0": "Apply tebuconazole or miconazole at 50–75% of flowering stage",
+      "prevention_1": "Use Fusarium-resistant or tolerant wheat varieties",
+      "prevention_2": "Avoid corn residues in the field (primary infection source)",
+      "prevention_3": "Do not over-apply nitrogen, especially during flowering",
+      "prevention_4": "Test harvested grain for DON mycotoxins if risk was high"
+    },
+    "mildew": {
+      "name": "Powdery Mildew",
+      "trigger_sweet_high": "4+ days with humidity ≥85% and temperature 12–22°C: ideal conditions for mildew",
+      "trigger_sweet_low": "2–3 days with high humidity and ideal temperature for mildew",
+      "trigger_temp_optimal": "Average temperature 15–21°C: ideal for mildew development",
+      "trigger_temp_acceptable": "Average temperature 12–15°C: suitable for mildew development",
+      "trigger_temp_inhibit": "Temperature above 25°C: inhibits mildew spread",
+      "trigger_dew": "3+ days with large temperature variation (≥12°C): promotes dew formation",
+      "trigger_mod_hum": "3+ days with moderate humidity (70–85%) and ideal temperature",
+      "trigger_diurnal": "Diurnal temperature variation ≥10°C: promotes dew deposition on leaves",
+      "prevention_0": "Apply triadimenol, tebuconazole, or myclobutanil at first white spots",
+      "prevention_1": "Use mildew-resistant or tolerant wheat varieties",
+      "prevention_2": "Reduce planting density to improve airflow",
+      "prevention_3": "Avoid excessive nitrogen fertilization which promotes soft growth",
+      "prevention_4": "Monitor lower leaves from the tillering stage onwards"
+    },
+    "tan_spot": {
+      "name": "Tan Spot",
+      "trigger_opt_high": "3+ days with humidity >80% and temperature 18–28°C: optimal conditions",
+      "trigger_opt_low": "At least one day with humidity >80% and temperature 18–28°C",
+      "trigger_fast_high": "3+ days with humidity >75% and temperature 20–27°C: fast disease cycle",
+      "trigger_fast_low": "Two days with humidity >75% and temperature 20–27°C",
+      "trigger_min_days": "5+ days with humidity >70% and temperature 10–30°C: persistent risk",
+      "trigger_temp_optimal": "Average temperature 20–27°C: ideal for tan spot lesion formation",
+      "prevention_0": "Apply propiconazole or tebuconazole at first brown lesions with dark edges",
+      "prevention_1": "Till or remove wheat straw (primary source of Pyrenophora tritici-repentis)",
+      "prevention_2": "Rotate with non-host crops (canola, legumes) for 2+ years",
+      "prevention_3": "Use less susceptible wheat varieties"
+    },
+    "root_rot": {
+      "name": "Root Rot",
+      "trigger_waterlog_high": "3+ days with humidity >90% and temperature below 20°C: waterlogging risk",
+      "trigger_waterlog_low": "At least one day with very high humidity and moderate temperature",
+      "trigger_hum_high": "4+ days with humidity >85%: persistent soil saturation conditions",
+      "trigger_hum_low": "2–3 days with humidity >85%",
+      "trigger_avg_condition": "Average conditions (temperature <18°C, humidity >80%) promote pathogens",
+      "prevention_0": "Improve field drainage (ditches, drains, raised beds)",
+      "prevention_1": "Use thiram + carboxin or tebuconazole as seed treatment before planting",
+      "prevention_2": "Rotate with legumes (chickpeas, lentils) for 2–3 years",
+      "prevention_3": "Avoid waterlogged or compacted soil; deep tillage when needed"
+    },
+    "weather_error": "Failed to retrieve weather data",
+    "retry": "Retry",
+    "triggers_label": "Risk Factors:",
+    "prevention_label": "Prevention Measures:"
+  },
+  "weather": {
+    "clear": "Clear",
+    "partly_cloudy": "Partly Cloudy",
+    "cloudy": "Cloudy",
+    "foggy": "Foggy",
+    "drizzle": "Drizzle",
+    "rainy": "Rainy",
+    "snowy": "Snowy",
+    "heavy_rain": "Heavy Rain",
+    "snow_storm": "Snowstorm",
+    "thunderstorm": "Thunderstorm",
+    "unknown": "Unknown"
+  },
+  "triggers": {
+    "humidity_high": "High humidity",
+    "temperature_optimal": "Optimal temperature range",
+    "leaf_wetness": "Extended leaf wetness period",
+    "night_humidity": "High night humidity",
+    "warm_conditions": "Warm conditions"
+  },
+  "irrigation_engine": {
+    "categories": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "frequency": {
+      "every_3_4_days": "Every 3-4 days",
+      "every_2_3_days": "Every 2-3 days",
+      "every_1_2_days": "Every 1-2 days",
+      "daily_twice": "Daily or twice a day"
+    },
+    "confidence": {
+      "high": "High",
+      "good": "Good",
+      "fair": "Fair"
+    },
+    "messages": {
+      "temp_high": "Temperature is high ({value}°C); early morning irrigation recommended",
+      "high_humidity": "High humidity detected; reduce irrigation frequency to limit disease spread",
+      "low_humidity": "Low humidity; slightly increase irrigation frequency to avoid plant stress",
+      "high_wind": "High wind speed; ensure sufficient soil moisture to prevent drying",
+      "optimal_timing": "Optimal timing: {value}",
+      "high_water_demand": "⚠️ High water demand detected; monitor soil moisture carefully",
+      "disease_factor_applied": "Disease factor applied: {value}"
+    },
+    "timing": {
+      "morning_dry": "Early morning (5–7 AM) to allow fast leaf drying",
+      "root_morning": "Morning only with low-volume controlled irrigation",
+      "evening_mite": "Late evening while maintaining moderate soil moisture",
+      "default": "Early morning or late evening with ground-level irrigation"
+    }
+  },
+  "disease_factors": {
+    "rust": {
+      "rationale": "Rust diseases spread faster in humid conditions; reduce irrigation slightly to minimize leaf wetness.",
+      "recommendations": [
+        "Avoid overhead sprinkler irrigation",
+        "Water in early morning only",
+        "Reduce leaf wetness duration",
+        "Monitor disease spread weekly"
+      ]
+    },
+    "septoria": {
+      "rationale": "Septoria thrives in wet conditions; significantly reduce irrigation to limit disease pressure.",
+      "recommendations": [
+        "Use drip irrigation only",
+        "Improve field drainage",
+        "Remove infected leaves",
+        "Increase ventilation"
+      ]
+    },
+    "mildew": {
+      "rationale": "Powdery mildew is less affected by irrigation volume; maintain regular irrigation with good ventilation.",
+      "recommendations": [
+        "Avoid excessive humidity",
+        "Ensure good ventilation",
+        "Use preventive fungicide",
+        "Water at soil level only"
+      ]
+    },
+    "tan_spot": {
+      "rationale": "Tan spot spreads in persistent humid conditions; moderate reduction in irrigation is recommended."
+    },
+    "blast": {
+      "rationale": "Blast develops rapidly in wet environments; reduce irrigation frequency.",
+      "recommendations": [
+        "Avoid excess nitrogen fertilization",
+        "Reduce irrigation frequency",
+        "Monitor humidity carefully",
+        "Apply fungicide when needed"
+      ]
+    },
+    "fusarium": {
+      "rationale": "Fusarium head blight favors wet conditions; reduce excessive irrigation."
+    },
+    "leaf_blight": {
+      "rationale": "Leaf blight intensity increases with higher leaf wetness; moderate irrigation reduction is recommended."
+    },
+    "root_rot": {
+      "rationale": "Root rot is strongly linked to overwatering and poor drainage; significantly reduce irrigation.",
+      "recommendations": [
+        "Reduce irrigation immediately",
+        "Improve soil drainage",
+        "Avoid waterlogged soil",
+        "Inspect roots regularly"
+      ]
+    },
+    "smut": {
+      "rationale": "Smut is weakly related to irrigation; a slight reduction is applied as a precaution."
+    },
+    "aphid": {
+      "rationale": "Aphid outbreaks may stress the plant; maintain slightly higher moisture to aid recovery.",
+      "recommendations": [
+        "Inspect the underside of leaves",
+        "Use biological control",
+        "Avoid plant stress",
+        "Monitor outbreaks daily"
+      ]
+    },
+    "mite": {
+      "rationale": "Spider mites thrive in dry conditions; slightly increase irrigation and humidity near the soil.",
+      "recommendations": [
+        "Slightly increase humidity",
+        "Check leaves for spider webs",
+        "Avoid drought stress",
+        "Apply appropriate miticide when needed"
+      ]
+    },
+    "stem_fly": {
+      "rationale": "Stem fly damage is not strongly affected by irrigation levels."
+    },
+    "healthy": {
+      "rationale": "Plant is healthy; standard irrigation practices are applied.",
+      "recommendations": [
+        "Maintain regular irrigation schedule",
+        "Monitor soil moisture regularly",
+        "Apply preventive care practices",
+        "Inspect crops weekly"
+      ]
+    },
+    "unknown": {
+      "rationale": "Unknown condition detected; a conservative irrigation adjustment is applied.",
+      "recommendations": [
+        "Confirm diagnosis with an agricultural expert",
+        "Monitor crop condition closely",
+        "Document disease progression",
+        "Adjust irrigation carefully"
+      ]
+    }
+  },
+  "auth": {
+    "welcome_back": "Welcome Back",
+    "access_dashboard": "Sign in to access your farm dashboard",
+    "email": "Email",
+    "email_hint": "farmer@example.com",
+    "email_required": "Email is required",
+    "email_invalid": "Enter a valid email address",
+    "password": "Password",
+    "password_hint": "••••••••",
+    "password_required": "Password is required",
+    "password_min_chars": "Password must be at least 6 characters",
+    "password_reset_soon": "Password reset will be available soon",
+    "forgot_password": "Forgot password?",
+    "log_in": "Sign In",
+    "no_account": "Don't have an account? ",
+    "create_account": "Create account",
+    "login_locked": "Too many attempts. Try again after {minutes} minutes",
+    "sign_in": "Sign In",
+    "join_agroscan": "Join AgroScan to monitor your farm's health",
+    "username": "Username",
+    "username_hint": "farmer_john",
+    "confirm_password": "Confirm Password",
+    "confirm_password_hint": "Re-enter your password",
+    "password_requirements": "• At least 8 characters\n• At least one uppercase letter\n• At least one number",
+    "already_have_account": "Already have an account? ",
+    "account_created": "✓ Account created! Please sign in.",
+    "login_required": "You must be signed in"
+  },
+  "common": {
+    "logout": "Sign Out",
+    "logout_confirmation": "Are you sure you want to sign out?",
+    "cancel": "Cancel",
+    "logged_out_successfully": "Signed out successfully",
+    "loading": "Loading...",
+    "no_information": "No information available",
+    "unknown_error": "An unknown error occurred",
+    "retry": "Retry",
+    "no_data": "No data available",
+    "show_all": "Show All"
+  },
+  "treatment_sections": {
+    "symptoms": "Symptoms",
+    "treatments": "Treatments",
+    "recommended_products": "Recommended Products",
+    "prevention_tips": "Prevention Tips"
+  },
+  "disease": {
+    "symptoms_detected": "Symptoms Detected",
+    "observed_symptoms": "Observed Symptoms",
+    "info_message": "This is an AI-assisted diagnosis. Confirm with an agricultural expert if symptoms persist.",
+    "view_treatment": "View Treatment"
+  }
+}

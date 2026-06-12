@@ -1,0 +1,858 @@
+{
+  "general": {
+    "app_name": "SafeGrow",
+    "loading": "Chargement...",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "error": "Erreur",
+    "success": "Succès",
+    "no_data": "Aucune information disponible"
+  },
+  "splash": {
+    "tagline": "Surveillance Intelligente des Cultures"
+  },
+  "welcome": {
+    "title": "Agriculture Intelligente\nSimplifiée",
+    "subtitle": "Détectez les maladies des cultures instantanément grâce à l'intelligence artificielle.",
+    "get_started": "Commencer"
+  },
+  "login": {
+    "welcome_back": "Bon Retour",
+    "subtitle": "Connectez-vous pour accéder à votre tableau de bord",
+    "email": "E-mail",
+    "email_hint": "agriculteur@exemple.com",
+    "password": "Mot de passe",
+    "password_hint": "••••••••",
+    "forgot_password": "Mot de passe oublié ?",
+    "login_btn": "Se connecter",
+    "no_account": "Pas encore de compte ? ",
+    "create_account": "Créer un compte",
+    "password_reset_soon": "La réinitialisation du mot de passe sera bientôt disponible",
+    "too_many_attempts": "Trop de tentatives. Réessayez dans",
+    "minutes": "minutes",
+    "minute": "minute"
+  },
+  "validation": {
+    "email_required": "L'e-mail est obligatoire",
+    "email_invalid": "Entrez une adresse e-mail valide",
+    "password_required": "Le mot de passe est obligatoire",
+    "password_too_short": "Le mot de passe doit comporter au moins 6 caractères"
+  },
+  "register": {
+    "title": "Créer un Compte",
+    "subtitle": "Rejoignez AgroScan pour surveiller la santé de votre exploitation",
+    "username": "Nom d'utilisateur",
+    "username_hint": "agriculteur_jean",
+    "confirm_password": "Confirmer le mot de passe",
+    "confirm_password_hint": "Ressaisissez votre mot de passe",
+    "password_hint_long": "Au moins 8 caractères, une majuscule, un chiffre",
+    "password_requirements": "• Au moins 8 caractères\n• Au moins une lettre majuscule\n• Au moins un chiffre",
+    "already_account": "Vous avez déjà un compte ? ",
+    "sign_in": "Se connecter",
+    "account_created": "✓ Compte créé ! Veuillez vous connecter."
+  },
+  "home": {
+    "greeting": "Bonjour 👋",
+    "title": "Système de Surveillance des Cultures",
+    "weather_load_error": "Échec du chargement de la météo",
+    "alert_tooltip": "Alertes Maladies"
+  },
+  "profile": {
+    "title": "Profil",
+    "member_since": "Membre depuis",
+    "scan_history": "Historique des analyses",
+    "scan_history_subtitle": "Consulter vos détections enregistrées",
+    "settings": "Paramètres",
+    "settings_subtitle": "Gérer les préférences de votre compte",
+    "help_support": "Aide et Support",
+    "help_support_subtitle": "Obtenir de l'aide pour l'application",
+    "logout": "Se déconnecter",
+    "logout_confirm_title": "Se déconnecter ?",
+    "logout_confirm_body": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "logout_success": "Déconnexion réussie",
+    "not_logged_in": "Non connecté",
+    "go_to_login": "Aller à la connexion",
+    "logout_title": "Se déconnecter ?",
+    "logout_message": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "language": "Langue",
+    "language_subtitle": "Choisissez votre langue préférée"
+  },
+  "language": {
+    "title": "Langue",
+    "subtitle": "Choisissez votre langue préférée",
+    "english": "Anglais",
+    "french": "Français",
+    "arabic": "Arabe"
+  },
+  "treatment": {
+    "symptoms": "Symptômes",
+    "treatments": "Traitements",
+    "medicines": "Produits Recommandés",
+    "prevention_tips": "Conseils de Prévention",
+    "advice": "Conseils de Prévention",
+    "share_coming_soon": "Le partage sera bientôt disponible",
+    "crop_healthy": "Culture saine",
+    "disease_detected": "Maladie détectée",
+    "confidence": "Confiance 94%",
+    "warning_message": "Agissez rapidement dans les 48 heures pour éviter d'autres pertes de récolte."
+  },
+  "camera": {
+    "title": "Scanner de Culture",
+    "capture_photo": "Prendre une photo",
+    "upload_photo": "Télécharger une photo",
+    "analyzing": "Analyse en cours...",
+    "confidence": "Confiance : {percent}%",
+    "view_treatment": "Voir les détails du traitement",
+    "scanner": "Scanner de Culture",
+    "gallery": "Galerie",
+    "treatment_details": "Voir les détails du traitement"
+  },
+  "Yellow Rust": {
+    "name": "Rouille Jaune",
+    "symptoms": {
+      "0": "Pustules jaune-orange sur les feuilles",
+      "1": "Disposition linéaire des spores",
+      "2": "Jaunissement prématuré des feuilles",
+      "3": "Réduction du rendement en grains"
+    },
+    "treatments": {
+      "0": "Appliquer des fongicides dès les premiers signes d'infection",
+      "1": "Utiliser des variétés de blé résistantes",
+      "2": "Éliminer les résidus de culture infectés",
+      "3": "Éviter la fertilisation azotée excessive"
+    },
+    "medicines": {
+      "0": "Propiconazole 25% CE",
+      "1": "Tébuconazole 250 CE",
+      "2": "Azoxystrobine 23% SC",
+      "3": "Mancozèbe 75% WP (préventif)"
+    },
+    "advice": {
+      "0": "Semer tôt pour éviter le pic de la saison de rouille",
+      "1": "Assurer un bon drainage des parcelles",
+      "2": "Surveiller la météo pour les périodes d'humidité élevée",
+      "3": "Effectuer des rotations avec des cultures non-hôtes"
+    }
+  },
+  "Black Rust": {
+    "name": "Rouille Noire",
+    "symptoms": {
+      "0": "La première phase apparaît sous forme de petites taches jaune pâle.",
+      "1": "Suivies de pustules brun-rougeâtre allongées sur les gaines foliaires et les tiges.",
+      "2": "La deuxième phase montre des pustules noires brillantes sur les tiges et les gaines des épis.",
+      "3": "Les plantes infectées sont courtes, sujettes à la verse et peuvent mourir dans les cas graves."
+    },
+    "treatments": {
+      "0": "Pulvérisation préventive avant la propagation sévère avec des fongicides systémiques.",
+      "1": "Répéter la pulvérisation toutes les 14 jours.",
+      "2": "Utiliser une couverture de pulvérisation fine pour atteindre la tige.",
+      "3": "Éliminer les plantes hôtes alternatives si présentes."
+    },
+    "medicines": {
+      "0": "Tébuconazole 250 CE",
+      "1": "Propiconazole 25% CE",
+      "2": "Trifloxystrobine + Tébuconazole (Nativo)"
+    },
+    "advice": {
+      "0": "Rotation sur 2-3 ans avec des cultures non-hôtes, éviter les résidus de blé précédents.",
+      "1": "Planter des variétés résistantes comme Morocco ou Little Club.",
+      "2": "Fertilisation équilibrée et réduction de l'excès d'azote.",
+      "3": "Surveillance météorologique régulière, semer légèrement plus tard pour éviter l'infection printanière."
+    }
+  },
+  "Aphid": {
+    "name": "Puceron",
+    "symptoms": {
+      "0": "Les pucerons se regroupent sur les feuilles et les tiges causant enroulement et jaunissement.",
+      "1": "Produisent du miellat qui attire les fourmis et les moisissures noires.",
+      "2": "Les infestations importantes réduisent la croissance et le rendement."
+    },
+    "treatments": {
+      "0": "Pulvériser des insecticides systémiques lorsque le seuil économique est atteint.",
+      "1": "Répéter le traitement après 7-10 jours si nécessaire."
+    },
+    "medicines": {
+      "0": "Consulter un spécialiste agricole local pour les produits homologués."
+    },
+    "advice": {
+      "0": "Favoriser les prédateurs naturels comme les coccinelles.",
+      "1": "Surveiller régulièrement les parcelles à l'aide de pièges jaunes englués.",
+      "2": "Éviter la fertilisation azotée excessive."
+    }
+  },
+  "Blast": {
+    "name": "Pyriculariose",
+    "symptoms": {
+      "0": "Les symptômes initiaux sur les feuilles apparaissent comme des taches grises ou ovales imbibées d'eau.",
+      "1": "Elles deviennent grises ou brunes avec des bords sombres ou un halo jaune.",
+      "2": "Sur les épis, un blanchissement partiel ou total apparaît à partir d'un point d'infection gris-noir.",
+      "3": "Les épis deviennent blancs, ratatinés et vides.",
+      "4": "Ces symptômes apparaissent généralement pendant la floraison dans des conditions chaudes et humides."
+    },
+    "treatments": {
+      "0": "Le traitement principal repose sur des fongicides systémiques.",
+      "1": "Pulvériser deux fois avec un intervalle de 7-10 jours.",
+      "2": "L'efficacité est réduite en conditions d'humidité élevée.",
+      "3": "Le traitement des semences avant la plantation aide à réduire la propagation."
+    },
+    "medicines": {
+      "0": "Tricyclazole 75% WP",
+      "1": "Isoprothiolane 40% CE",
+      "2": "Propiconazole 25% CE"
+    },
+    "advice": {
+      "0": "Planter des variétés résistantes et ajuster la date de semis.",
+      "1": "Utiliser des semences certifiées traitées, éviter les semis denses et l'excès d'azote.",
+      "2": "Rotation appropriée et surveillance météorologique pour les pulvérisations préventives."
+    }
+  },
+  "Brown Rust": {
+    "name": "Rouille Brune",
+    "symptoms": {
+      "0": "La maladie débute par de petites taches orange ou brun clair sur la face inférieure des feuilles.",
+      "1": "Ces taches s'élargissent progressivement en pustules orangées poudreuses.",
+      "2": "À mesure que la maladie progresse, les pustules deviennent brun foncé et l'épiderme peut se rompre.",
+      "3": "Les infections graves provoquent le dessèchement et le jaunissement des feuilles et des épis plus petits."
+    },
+    "treatments": {
+      "0": "Pulvérisation immédiate avec des fongicides systémiques aux premiers symptômes.",
+      "1": "Répéter la pulvérisation après 10-14 jours si l'humidité élevée persiste.",
+      "2": "Pulvériser tôt le matin ou le soir avec un volume d'eau suffisant.",
+      "3": "Éliminer et détruire les plantes infectées tôt dans les petits champs."
+    },
+    "medicines": {
+      "0": "Tébuconazole 250 CE",
+      "1": "Propiconazole 25% CE",
+      "2": "Azoxystrobine 23% SC"
+    },
+    "advice": {
+      "0": "Éviter les semis denses.",
+      "1": "Planter des variétés résistantes.",
+      "2": "Surveillance hebdomadaire surtout à 20-25°C et humidité >80%.",
+      "3": "Rotation avec des légumineuses et élimination des résidus de culture."
+    }
+  },
+  "Common Root Rot": {
+    "name": "Pourriture Racinaire Commune",
+    "symptoms": {
+      "0": "Les symptômes débutent au stade plantule avec flétrissement et brunissement de la base de la tige.",
+      "1": "Les plantes s'arrachent facilement et sont jaune pâle, avec des épis ratatinés.",
+      "2": "Entraîne le nanisme, des épis faibles et une réduction du rendement."
+    },
+    "treatments": {
+      "0": "Traitement des semences avant la plantation avec des fongicides systémiques.",
+      "1": "Appliquer un drench de sol ou une irrigation racinaire aux stades précoces si des symptômes apparaissent.",
+      "2": "Améliorer le drainage et éliminer les plantes infectées dans les petits champs.",
+      "3": "Utiliser Bacillus subtilis comme option biologique."
+    },
+    "medicines": {
+      "0": "Carboxine + Thirame (Vitavax 200)",
+      "1": "Traitement de semences au Tébuconazole",
+      "2": "Bacillus subtilis"
+    },
+    "advice": {
+      "0": "Rotation sur 2-3 ans avec des cultures non-hôtes comme les légumineuses.",
+      "1": "Utiliser des semences certifiées prétraitées et une fertilisation équilibrée riche en phosphore et potassium.",
+      "2": "Améliorer l'aération et éviter l'humidité excessive."
+    }
+  },
+  "Fusarium Head Blight": {
+    "name": "Fusariose des Épis",
+    "symptoms": {
+      "0": "La brûlure des plantules peut survenir, mais le symptôme le plus visible est le blanchissement des épis.",
+      "1": "Les épis deviennent rose-brun clair par temps chaud et humide avec une croissance fongique visible.",
+      "2": "Les grains sont petits, ratatinés et peuvent être contaminés par des mycotoxines DON dangereuses."
+    },
+    "treatments": {
+      "0": "Pulvérisation immédiate avec des fongicides systémiques au début de la floraison.",
+      "1": "Répéter la pulvérisation après 3-5 jours sous forte humidité.",
+      "2": "Traitement des semences avant la plantation et réduction de l'humidité prolongée."
+    },
+    "medicines": {
+      "0": "Tébuconazole 250 CE",
+      "1": "Miconazole 9% CE",
+      "2": "Celest Extra FS"
+    },
+    "advice": {
+      "0": "Planter des variétés résistantes comme Sumai 3 ou Ernie.",
+      "1": "Éviter l'irrigation tardive ou l'excès d'azote.",
+      "2": "Surveiller la météo pendant la floraison et utiliser des semences saines.",
+      "3": "Fractionner l'irrigation pour éviter l'humidité prolongée."
+    }
+  },
+  "Leaf Blight": {
+    "name": "Brûlure Foliaire",
+    "symptoms": {
+      "0": "Les symptômes débutent par de petites taches brun foncé à noires sur les feuilles et les bases.",
+      "1": "Elles s'élargissent en taches ovales ou allongées qui fusionnent sur le limbe foliaire.",
+      "2": "Entraîne des plantes courtes et des grains petits ou vides."
+    },
+    "treatments": {
+      "0": "Pulvérisation immédiate avec des fongicides systémiques aux premières taches.",
+      "1": "Répéter toutes les 10-14 jours sous forte humidité.",
+      "2": "Utiliser un volume d'eau suffisant avec des adjuvants pour améliorer l'adhérence.",
+      "3": "Éliminer les feuilles infectées dans les petits champs et améliorer la ventilation."
+    },
+    "medicines": {
+      "0": "Tébuconazole 250 CE",
+      "1": "Propiconazole 25% CE",
+      "2": "Dividend"
+    },
+    "advice": {
+      "0": "Utiliser des variétés résistantes et des semences prétraitées.",
+      "1": "Rotation sur 2-3 ans avec des légumineuses.",
+      "2": "Éviter l'excès d'azote et augmenter le phosphore et le potassium.",
+      "3": "Irrigation modérée avec bonne ventilation et surveillance hebdomadaire au printemps."
+    }
+  },
+  "Mildew": {
+    "name": "Oïdium",
+    "symptoms": {
+      "0": "De petites taches jaunes apparaissent sur les feuilles inférieures aux stades précoces.",
+      "1": "Une couche blanche poudreuse se développe sur les feuilles, les tiges et les épis.",
+      "2": "Le revêtement vire au brun ou gris, causant le dessèchement des feuilles."
+    },
+    "treatments": {
+      "0": "Appliquer des fongicides préventifs ou curatifs aux premiers signes d'infection.",
+      "1": "Répéter le traitement toutes les 7-10 jours en conditions humides.",
+      "2": "Des solutions à l'huile de neem ou au bicarbonate de soude peuvent être utilisées dans les petits champs."
+    },
+    "medicines": {
+      "0": "Consulter les recommandations agricoles locales pour les fongicides homologués."
+    },
+    "advice": {
+      "0": "Éviter les semis denses et la fertilisation azotée excessive.",
+      "1": "Rotation et élimination du blé voluntaire.",
+      "2": "Utiliser des semences traitées et surveiller régulièrement les niveaux d'humidité."
+    }
+  },
+  "Mite": {
+    "name": "Acarien",
+    "symptoms": {
+      "0": "Les acariens sont invisibles à l'œil nu, mais les symptômes incluent des pointes de feuilles pâles et enroulées.",
+      "1": "Les feuilles peuvent s'enrouler en tube et les plantes peuvent être rabougries.",
+      "2": "Les infestations graves réduisent significativement le rendement."
+    },
+    "treatments": {
+      "0": "Le traitement est difficile, mais des acaricides peuvent être pulvérisés lorsque le seuil économique est dépassé.",
+      "1": "Répéter toutes les 7-10 jours avec une pulvérisation fine.",
+      "2": "Détruire le blé voluntaire et utiliser des huiles minérales si nécessaire."
+    },
+    "medicines": {
+      "0": "Abamectine 1,8% CE",
+      "1": "Bifénazate 24% SC",
+      "2": "Pulvérisation d'huile minérale"
+    },
+    "advice": {
+      "0": "Détruire le blé voluntaire et les mauvaises herbes avant la plantation.",
+      "1": "Retarder légèrement la plantation si nécessaire et éviter les cultures hôtes adjacentes.",
+      "2": "Libérer des prédateurs naturels comme les coccinelles si possible."
+    }
+  },
+  "Septoria": {
+    "name": "Septoriose",
+    "symptoms": {
+      "0": "Les symptômes débutent sur les feuilles inférieures par de petites taches jaunes imbibées d'eau.",
+      "1": "Elles s'élargissent en taches longitudinales ou ovales avec un large halo jaune.",
+      "2": "Les taches fusionnent causant la mort et la chute des feuilles."
+    },
+    "treatments": {
+      "0": "Pulvérisation préventive-curative dès la fin de l'hiver ou aux premières taches.",
+      "1": "Répéter 2-3 fois toutes les 10-14 jours sous forte humidité.",
+      "2": "Utiliser 300-400 L/ha avec des adjuvants pour atteindre les feuilles inférieures."
+    },
+    "medicines": {
+      "0": "Propiconazole 25% CE",
+      "1": "Tébuconazole 250 CE",
+      "2": "Azoxystrobine + Cyproconazole"
+    },
+    "advice": {
+      "0": "Rotation triennale avec légumineuses ou brassicacées.",
+      "1": "Irrigation modérée et éviter l'humidité prolongée.",
+      "2": "Surveillance hebdomadaire au printemps à 15-25°C et forte humidité.",
+      "3": "Éviter les semis denses et l'excès d'azote."
+    }
+  },
+  "Healthy": {
+    "name": "Plante Saine",
+    "symptoms": {
+      "0": "Aucun symptôme de maladie"
+    },
+    "treatments": {},
+    "medicines": {},
+    "advice": {
+      "0": "Continuer la surveillance régulière",
+      "1": "Maintenir de bonnes pratiques d'irrigation"
+    }
+  },
+  "Smut": {
+    "name": "Charbon",
+    "symptoms": {
+      "0": "Masses de spores noires poudreuses remplaçant les grains.",
+      "1": "Les plantes infectées peuvent présenter un nanisme.",
+      "2": "Couche noire ressemblant à de la suie sur les épis et les semences."
+    },
+    "treatments": {
+      "0": "Utiliser des semences certifiées exemptes de maladies.",
+      "1": "Appliquer des traitements fongicides sur les semences avant la plantation.",
+      "2": "Éliminer et détruire le matériel végétal infecté."
+    },
+    "medicines": {
+      "0": "Consulter un spécialiste agricole local pour les fongicides homologués."
+    },
+    "advice": {
+      "0": "Effectuer des rotations pour briser le cycle de la maladie.",
+      "1": "Éviter de planter dans des champs ayant un historique de charbon.",
+      "2": "Surveiller régulièrement les parcelles et éliminer tôt les plantes infectées."
+    }
+  },
+  "Stem fly": {
+    "name": "Mouche des Tiges",
+    "symptoms": {
+      "0": "Les jeunes feuilles jaunissent et se flétrissent (symptôme de cœur mort).",
+      "1": "Les larves creusent des galeries dans la tige causant des dommages internes.",
+      "2": "Les talles infectées meurent avant l'épiaison."
+    },
+    "treatments": {
+      "0": "Appliquer des insecticides au stade du tallage précoce.",
+      "1": "Utiliser des insecticides systémiques pour un contrôle efficace.",
+      "2": "Éliminer et détruire immédiatement les talles endommagées."
+    },
+    "medicines": {
+      "0": "Consulter un spécialiste agricole local pour les insecticides homologués."
+    },
+    "advice": {
+      "0": "Semer tôt pour éviter les périodes de pic de population des mouches.",
+      "1": "Éviter les semis tardifs qui augmentent la sensibilité.",
+      "2": "Surveiller régulièrement les cultures pour une détection précoce."
+    }
+  },
+  "Tan spot": {
+    "name": "Tache Bronzée",
+    "symptoms": {
+      "0": "Lésions ovales brun clair à brun avec un halo jaune sur les feuilles.",
+      "1": "Les lésions peuvent fusionner causant de grandes zones mortes sur les feuilles.",
+      "2": "Les infections graves réduisent la photosynthèse et le rendement."
+    },
+    "treatments": {
+      "0": "Appliquer des fongicides foliaires aux premiers signes d'infection.",
+      "1": "Utiliser des variétés résistantes si disponibles.",
+      "2": "Éliminer les résidus de culture après la récolte pour réduire la source d'infection."
+    },
+    "medicines": {
+      "0": "Consulter un spécialiste agricole local pour les fongicides homologués."
+    },
+    "advice": {
+      "0": "Effectuer des rotations pour réduire les sources d'infection dans le sol.",
+      "1": "Éviter l'irrigation excessive qui favorise le mouillage foliaire.",
+      "2": "Surveiller régulièrement les parcelles surtout en conditions humides."
+    }
+  },
+  "history": {
+    "title": "Analyses Récentes",
+    "view_all": "Voir Tout",
+    "no_data": "Aucune analyse pour le moment",
+    "confidence": "Confiance : ",
+    "healthy": "Sain",
+    "detected": "Détecté",
+    "warning_48h": "Agissez rapidement dans les 48 heures pour éviter d'autres pertes.",
+    "latest_checks": "Dernières Vérifications",
+    "no_checks_yet": "Aucune vérification pour le moment",
+    "saving": "Enregistrement...",
+    "saved": "Enregistré dans l'historique",
+    "save_error": "Échec de l'enregistrement : {error}",
+    "save_to_history": "Enregistrer dans l'historique"
+  },
+  "irrigation": {
+    "title": "Recommandation d'Irrigation",
+    "temperature": "Température",
+    "humidity": "Humidité",
+    "weather": "Condition Météo",
+    "recommended": "Irrigation recommandée en raison de la chaleur et de la faible humidité",
+    "not_needed": "Aucune irrigation nécessaire pour le moment",
+    "detected": "Détecté",
+    "warning": "Avertissement",
+    "recommendation": "Recommandation d'Irrigation",
+    "recommended_message": "L'irrigation est conseillée en raison de la température élevée et de la faible humidité",
+    "no_need_message": "Aucune irrigation nécessaire pour le moment",
+    "loading": "Calcul des recommandations d'irrigation...",
+    "load_failed": "Échec du chargement des recommandations d'irrigation",
+    "smart_title": "Recommandations d'Irrigation Intelligentes",
+    "smart_subtitle": "Analyse IA basée sur la météo et la maladie",
+    "intensity": "Intensité d'Irrigation",
+    "wind": "Vent",
+    "frequency": "Fréquence d'Irrigation",
+    "suggested_actions": "Actions Recommandées"
+  },
+  "irrigation_card": {
+    "loading": "Calcul des recommandations d'irrigation...",
+    "load_failed": "Échec du chargement des recommandations",
+    "retry": "Réessayer",
+    "no_data": "Aucune donnée disponible",
+    "smart_irrigation": "Recommandations d'Irrigation Intelligentes",
+    "analysis": "Analyse IA basée sur la météo et la maladie",
+    "intensity": "Intensité d'Irrigation",
+    "temperature": "Température",
+    "humidity": "Humidité",
+    "wind": "Vent",
+    "frequency": "Fréquence d'Irrigation",
+    "actions": "Actions Recommandées",
+    "ai": "IA"
+  },
+  "expert": {
+    "title": "Besoin d'un Expert ?",
+    "get_guidance": "Obtenir des conseils sur",
+    "general_guidance": "Obtenez des conseils d'experts pour la santé de vos plantes",
+    "disease_guidance": "Obtenez des conseils d'experts sur {disease}",
+    "connect_now": "Se Connecter Maintenant",
+    "need_help_title": "Besoin d'un Expert ?",
+    "personalized_guidance": "Obtenez des conseils personnalisés pour {diseaseName} auprès de nos experts agricoles.",
+    "connect_specialists": "Connectez-vous avec nos spécialistes agricoles pour des conseils sur vos cultures.",
+    "contact": "Contacter un Expert"
+  },
+  "notifications": {
+    "content": {
+      "rust_alert": "Risque élevé de rouille détecté dans votre région",
+      "mildew_alert": "Risque d'oïdium accru en raison de l'humidité",
+      "aphids_alert": "Alerte d'infestation de pucerons - prenez des mesures préventives",
+      "general_alert": "Nouvelle alerte maladie sur vos cultures de blé"
+    }
+  },
+  "alerts": {
+    "title": "Alertes Maladies",
+    "subtitle": "Basé sur les prévisions météo des 7 prochains jours",
+    "no_risks_title": "Aucun Risque Élevé",
+    "no_risks_body": "Les conditions météorologiques de la semaine prochaine sont favorables aux cultures.",
+    "load_error": "Impossible de récupérer les données météo",
+    "risk_triggers": "Facteurs de Risque :",
+    "risk_prevention": "Actions Préventives :",
+    "level_low": "Faible",
+    "level_moderate": "Modéré",
+    "level_high": "Élevé",
+    "level_critical": "Critique",
+    "yellow_rust": {
+      "name": "Rouille Jaune",
+      "trigger_crit_days": "3+ jours avec humidité >80% et température 2–20°C",
+      "trigger_crit_day": "Au moins un jour avec forte humidité et température idéale pour l'infection",
+      "trigger_opt_days": "4+ jours favorables à la germination des spores (humidité >70%, 2–20°C)",
+      "trigger_opt_day": "Plusieurs jours avec des conditions favorables à la germination des spores",
+      "trigger_temp_optimal": "Température moyenne 10–15°C : idéale pour la propagation de la rouille jaune",
+      "trigger_temp_acceptable": "Température moyenne 15–20°C : favorable au développement de la rouille jaune",
+      "trigger_temp_inhibit": "Température supérieure à 21°C : limite le développement de la rouille jaune",
+      "prevention_0": "Appliquer un fongicide préventif (propiconazole ou tébuconazole) avant l'infection",
+      "prevention_1": "Utiliser des variétés de blé résistantes ou tolérantes",
+      "prevention_2": "Surveiller les parcelles chaque semaine et noter les symptômes précoces",
+      "prevention_3": "Éliminer et détruire les résidus de culture infectés après la récolte",
+      "prevention_4": "Éviter la fertilisation azotée excessive qui favorise les tissus foliaires tendres"
+    },
+    "brown_rust": {
+      "name": "Rouille Brune",
+      "trigger_infection_days_high": "4+ jours avec humidité >60% et température 8–16°C : risque d'infection élevé",
+      "trigger_infection_days_low": "2–3 jours avec humidité >60% et température 8–16°C : risque modéré",
+      "trigger_high_hum": "3+ jours avec humidité >80% et température 8–25°C : très favorable à la propagation",
+      "trigger_fav_days_high": "5+ jours avec humidité >60% et température 8–25°C",
+      "trigger_fav_days_low": "3–4 jours avec humidité >60% et température 8–25°C",
+      "trigger_temp_optimal": "Température moyenne 15–25°C : idéale pour le développement de la rouille brune",
+      "trigger_temp_acceptable": "Température moyenne 8–15°C : favorable au développement de la rouille brune",
+      "prevention_0": "Appliquer un fongicide aux premiers signes de pustules orangées sur les feuilles",
+      "prevention_1": "Utiliser des variétés de blé résistantes certifiées",
+      "prevention_2": "Éviter les semis denses pour améliorer la circulation de l'air",
+      "prevention_3": "Éliminer les résidus infectés et effectuer une rotation avec des légumineuses"
+    },
+    "stem_rust": {
+      "name": "Rouille des Tiges",
+      "trigger_hot_humid_high": "3+ jours à 18–30°C et humidité >60% : conditions critiques",
+      "trigger_hot_humid_low": "Au moins un jour avec des conditions chaudes et humides favorables à la rouille des tiges",
+      "trigger_night_opt": "3+ nuits à 15–22°C et humidité >55% : idéal pour la germination des spores",
+      "trigger_fav_days": "4+ jours à 15–30°C et humidité >55%",
+      "trigger_avg_optimal": "Conditions moyennes (humidité >65%, température 18–30°C) très favorables",
+      "prevention_0": "Appliquer un fongicide triazole ou strobilurine aux premiers signes sur les tiges",
+      "prevention_1": "Utiliser des variétés résistantes à Ug99 si disponibles dans votre région",
+      "prevention_2": "Éviter les semis tardifs qui exposent les cultures aux conditions chaudes du printemps",
+      "prevention_3": "Surveiller et éliminer les Berberis (épine-vinette), l'hôte alternatif"
+    },
+    "septoria": {
+      "name": "Septoriose Foliaire",
+      "trigger_epic_high": "3+ jours avec humidité >85% et température 15–25°C : conditions épidémiques",
+      "trigger_epic_low": "Au moins un jour avec humidité très élevée et température optimale",
+      "trigger_very_hum_high": "4+ jours avec humidité ≥90% : risque très élevé de propagation de la septoriose",
+      "trigger_very_hum_low": "2–3 jours avec humidité ≥90%",
+      "trigger_fav_days": "4+ jours avec humidité >70% et température 10–25°C",
+      "trigger_temp_optimal": "Température moyenne 15–20°C : idéale pour Septoria tritici",
+      "trigger_temp_acceptable": "Température moyenne 20–25°C : encore favorable à la septoriose",
+      "trigger_temp_stop": "Température moyenne inférieure à 4°C : le développement de la maladie s'arrête",
+      "prevention_0": "Appliquer propiconazole ou tébuconazole au stade GS31–37 (élongation de la tige)",
+      "prevention_1": "Utiliser des variétés partiellement résistantes et effectuer une rotation avec des cultures non-céréalières",
+      "prevention_2": "Éviter les semis denses et la fertilisation azotée excessive",
+      "prevention_3": "Éliminer les résidus de culture pour réduire la source d'infection",
+      "prevention_4": "Appliquer un second traitement fongicide après 14 jours si l'humidité reste élevée"
+    },
+    "fusarium": {
+      "name": "Fusariose des Épis",
+      "trigger_rapid": "2+ jours avec humidité >95% et température 16–30°C : risque de propagation rapide",
+      "trigger_crit_high": "2+ jours avec humidité >90% et température 15–30°C : risque critique",
+      "trigger_crit_low": "Un jour avec humidité >90% et température 15–30°C : risque notable",
+      "trigger_fav_high": "3+ jours avec humidité ≥70% et température 15–30°C",
+      "trigger_temp_optimal": "Température moyenne 25–30°C : idéale pour la fusariose et la production de mycotoxines",
+      "trigger_temp_acceptable": "Température moyenne 20–25°C : favorable au développement de la fusariose",
+      "prevention_0": "Appliquer tébuconazole ou miconazole à 50–75% du stade de floraison",
+      "prevention_1": "Utiliser des variétés de blé résistantes ou tolérantes à la fusariose",
+      "prevention_2": "Éviter les résidus de maïs dans le champ (source principale d'infection)",
+      "prevention_3": "Ne pas surdoser en azote, surtout pendant la floraison",
+      "prevention_4": "Tester les grains récoltés pour les mycotoxines DON si le risque était élevé"
+    },
+    "mildew": {
+      "name": "Oïdium",
+      "trigger_sweet_high": "4+ jours avec humidité ≥85% et température 12–22°C : conditions idéales pour l'oïdium",
+      "trigger_sweet_low": "2–3 jours avec forte humidité et température idéale pour l'oïdium",
+      "trigger_temp_optimal": "Température moyenne 15–21°C : idéale pour le développement de l'oïdium",
+      "trigger_temp_acceptable": "Température moyenne 12–15°C : favorable au développement de l'oïdium",
+      "trigger_temp_inhibit": "Température supérieure à 25°C : inhibe la propagation de l'oïdium",
+      "trigger_dew": "3+ jours avec grande variation thermique (≥12°C) : favorise la formation de rosée",
+      "trigger_mod_hum": "3+ jours avec humidité modérée (70–85%) et température idéale",
+      "trigger_diurnal": "Variation thermique journalière ≥10°C : favorise le dépôt de rosée sur les feuilles",
+      "prevention_0": "Appliquer triadiménol, tébuconazole ou myclobutanil aux premières taches blanches",
+      "prevention_1": "Utiliser des variétés de blé résistantes ou tolérantes à l'oïdium",
+      "prevention_2": "Réduire la densité de semis pour améliorer la circulation de l'air",
+      "prevention_3": "Éviter la fertilisation azotée excessive qui favorise la croissance tendre",
+      "prevention_4": "Surveiller les feuilles inférieures dès le stade tallage"
+    },
+    "tan_spot": {
+      "name": "Tache Bronzée",
+      "trigger_opt_high": "3+ jours avec humidité >80% et température 18–28°C : conditions optimales",
+      "trigger_opt_low": "Au moins un jour avec humidité >80% et température 18–28°C",
+      "trigger_fast_high": "3+ jours avec humidité >75% et température 20–27°C : cycle de maladie rapide",
+      "trigger_fast_low": "Deux jours avec humidité >75% et température 20–27°C",
+      "trigger_min_days": "5+ jours avec humidité >70% et température 10–30°C : risque persistant",
+      "trigger_temp_optimal": "Température moyenne 20–27°C : idéale pour la formation de lésions de tache bronzée",
+      "prevention_0": "Appliquer propiconazole ou tébuconazole aux premières lésions brunes à bords sombres",
+      "prevention_1": "Labourer ou éliminer la paille de blé (source principale de Pyrenophora tritici-repentis)",
+      "prevention_2": "Rotation avec des cultures non-hôtes (colza, légumineuses) pendant 2+ ans",
+      "prevention_3": "Utiliser des variétés de blé moins sensibles"
+    },
+    "root_rot": {
+      "name": "Pourriture Racinaire",
+      "trigger_waterlog_high": "3+ jours avec humidité >90% et température inférieure à 20°C : risque d'engorgement",
+      "trigger_waterlog_low": "Au moins un jour avec humidité très élevée et température modérée",
+      "trigger_hum_high": "4+ jours avec humidité >85% : conditions de saturation persistante du sol",
+      "trigger_hum_low": "2–3 jours avec humidité >85%",
+      "trigger_avg_condition": "Conditions moyennes (température <18°C, humidité >80%) favorisent les pathogènes",
+      "prevention_0": "Améliorer le drainage des parcelles (fossés, drains, planches surélevées)",
+      "prevention_1": "Utiliser thirame + carboxine ou tébuconazole en traitement de semences",
+      "prevention_2": "Rotation avec des légumineuses (pois chiches, lentilles) pendant 2–3 ans",
+      "prevention_3": "Éviter les sols engorgés ou compactés ; labour profond si nécessaire"
+    },
+    "weather_error": "Impossible de récupérer les données météo",
+    "retry": "Réessayer",
+    "triggers_label": "Facteurs de Risque :",
+    "prevention_label": "Mesures Préventives :"
+  },
+  "weather": {
+    "clear": "Ensoleillé",
+    "partly_cloudy": "Partiellement Nuageux",
+    "cloudy": "Nuageux",
+    "foggy": "Brumeux",
+    "drizzle": "Bruine",
+    "rainy": "Pluvieux",
+    "snowy": "Neigeux",
+    "heavy_rain": "Fortes Pluies",
+    "snow_storm": "Tempête de Neige",
+    "thunderstorm": "Orage",
+    "unknown": "Inconnu"
+  },
+  "triggers": {
+    "humidity_high": "Humidité élevée",
+    "temperature_optimal": "Plage de température optimale",
+    "leaf_wetness": "Période prolongée de mouillage foliaire",
+    "night_humidity": "Humidité nocturne élevée",
+    "warm_conditions": "Conditions chaudes"
+  },
+  "irrigation_engine": {
+    "categories": {
+      "low": "Faible",
+      "moderate": "Modéré",
+      "high": "Élevé",
+      "critical": "Critique"
+    },
+    "frequency": {
+      "every_3_4_days": "Tous les 3-4 jours",
+      "every_2_3_days": "Tous les 2-3 jours",
+      "every_1_2_days": "Tous les 1-2 jours",
+      "daily_twice": "Quotidiennement ou deux fois par jour"
+    },
+    "confidence": {
+      "high": "Élevée",
+      "good": "Bonne",
+      "fair": "Correcte"
+    },
+    "messages": {
+      "temp_high": "La température est élevée ({value}°C) ; irrigation tôt le matin recommandée",
+      "high_humidity": "Humidité élevée détectée ; réduire la fréquence d'irrigation pour limiter la propagation des maladies",
+      "low_humidity": "Humidité faible ; augmenter légèrement la fréquence d'irrigation pour éviter le stress hydrique",
+      "high_wind": "Vitesse du vent élevée ; assurer une humidité suffisante du sol pour prévenir le dessèchement",
+      "optimal_timing": "Moment optimal : {value}",
+      "high_water_demand": "⚠️ Forte demande en eau détectée ; surveiller attentivement l'humidité du sol",
+      "disease_factor_applied": "Facteur maladie appliqué : {value}"
+    },
+    "timing": {
+      "morning_dry": "Tôt le matin (5h-7h) pour permettre un séchage rapide des feuilles",
+      "root_morning": "Matin seulement avec irrigation à faible volume et contrôlée",
+      "evening_mite": "En fin de soirée en maintenant une humidité du sol modérée",
+      "default": "Tôt le matin ou en fin de soirée avec irrigation au niveau du sol"
+    }
+  },
+  "disease_factors": {
+    "rust": {
+      "rationale": "Les maladies de rouille se propagent plus rapidement en conditions humides ; réduire légèrement l'irrigation pour minimiser le mouillage foliaire.",
+      "recommendations": [
+        "Éviter l'irrigation par aspersion",
+        "Arroser tôt le matin seulement",
+        "Réduire la durée de mouillage des feuilles",
+        "Surveiller la propagation de la maladie hebdomadairement"
+      ]
+    },
+    "septoria": {
+      "rationale": "La septoriose prolifère dans les conditions humides ; réduire significativement l'irrigation pour limiter la pression de la maladie.",
+      "recommendations": [
+        "Utiliser uniquement l'irrigation goutte à goutte",
+        "Améliorer le drainage de la parcelle",
+        "Éliminer les feuilles infectées",
+        "Augmenter la ventilation"
+      ]
+    },
+    "mildew": {
+      "rationale": "L'oïdium est moins affecté par le volume d'irrigation ; maintenir l'irrigation habituelle avec une bonne ventilation.",
+      "recommendations": [
+        "Éviter l'humidité excessive",
+        "Assurer une bonne ventilation",
+        "Utiliser un fongicide préventif",
+        "Arroser au niveau du sol uniquement"
+      ]
+    },
+    "tan_spot": {
+      "rationale": "La tache bronzée se propage dans les conditions d'humidité persistante ; une réduction modérée de l'irrigation est recommandée."
+    },
+    "blast": {
+      "rationale": "La pyriculariose se développe rapidement dans les environnements humides ; réduire la fréquence d'irrigation.",
+      "recommendations": [
+        "Éviter la fertilisation azotée excessive",
+        "Réduire la fréquence d'irrigation",
+        "Surveiller attentivement l'humidité",
+        "Appliquer un fongicide si nécessaire"
+      ]
+    },
+    "fusarium": {
+      "rationale": "La fusariose des épis favorise les conditions humides ; réduire l'irrigation excessive."
+    },
+    "leaf_blight": {
+      "rationale": "L'intensité de la brûlure foliaire augmente avec un mouillage foliaire plus important ; une réduction modérée de l'irrigation est recommandée."
+    },
+    "root_rot": {
+      "rationale": "La pourriture racinaire est fortement liée à un arrosage excessif et à un mauvais drainage ; réduire significativement l'irrigation.",
+      "recommendations": [
+        "Réduire l'irrigation immédiatement",
+        "Améliorer le drainage du sol",
+        "Éviter l'engorgement du sol",
+        "Inspecter régulièrement les racines"
+      ]
+    },
+    "smut": {
+      "rationale": "Le charbon est faiblement lié à l'irrigation ; une légère réduction est appliquée par précaution."
+    },
+    "aphid": {
+      "rationale": "Les infestations de pucerons peuvent stresser la plante ; maintenir une humidité légèrement plus élevée pour aider à la récupération.",
+      "recommendations": [
+        "Inspecter la face inférieure des feuilles",
+        "Utiliser la lutte biologique",
+        "Éviter le stress hydrique",
+        "Surveiller les infestations quotidiennement"
+      ]
+    },
+    "mite": {
+      "rationale": "Les acariens prolifèrent dans les conditions sèches ; augmenter légèrement l'irrigation et l'humidité près du sol.",
+      "recommendations": [
+        "Augmenter légèrement l'humidité",
+        "Vérifier les feuilles pour les toiles d'araignée",
+        "Éviter le stress de sécheresse",
+        "Appliquer un acaricide approprié si nécessaire"
+      ]
+    },
+    "stem_fly": {
+      "rationale": "Les dommages causés par la mouche des tiges ne sont pas fortement affectés par les niveaux d'irrigation."
+    },
+    "healthy": {
+      "rationale": "La plante est saine ; les pratiques d'irrigation standard sont appliquées.",
+      "recommendations": [
+        "Maintenir un calendrier d'irrigation régulier",
+        "Surveiller régulièrement l'humidité du sol",
+        "Appliquer des pratiques de soins préventifs",
+        "Inspecter les cultures hebdomadairement"
+      ]
+    },
+    "unknown": {
+      "rationale": "Condition inconnue détectée ; un ajustement d'irrigation conservateur est appliqué.",
+      "recommendations": [
+        "Confirmer le diagnostic avec un expert agricole",
+        "Surveiller attentivement l'état de la culture",
+        "Documenter l'évolution de la maladie",
+        "Ajuster l'irrigation avec précaution"
+      ]
+    }
+  },
+  "auth": {
+    "welcome_back": "Bon Retour",
+    "access_dashboard": "Connectez-vous pour accéder à votre tableau de bord agricole",
+    "email": "E-mail",
+    "email_hint": "agriculteur@exemple.com",
+    "email_required": "L'e-mail est obligatoire",
+    "email_invalid": "Entrez une adresse e-mail valide",
+    "password": "Mot de passe",
+    "password_hint": "••••••••",
+    "password_required": "Le mot de passe est obligatoire",
+    "password_min_chars": "Le mot de passe doit comporter au moins 6 caractères",
+    "password_reset_soon": "La réinitialisation du mot de passe sera bientôt disponible",
+    "forgot_password": "Mot de passe oublié ?",
+    "log_in": "Se Connecter",
+    "no_account": "Pas de compte ? ",
+    "create_account": "Créer un compte",
+    "login_locked": "Trop de tentatives. Réessayez après {minutes} minutes",
+    "sign_in": "Se Connecter",
+    "join_agroscan": "Rejoignez AgroScan pour surveiller la santé de votre exploitation",
+    "username": "Nom d'utilisateur",
+    "username_hint": "agriculteur_jean",
+    "confirm_password": "Confirmer le mot de passe",
+    "confirm_password_hint": "Ressaisissez votre mot de passe",
+    "password_requirements": "• Au moins 8 caractères\n• Au moins une lettre majuscule\n• Au moins un chiffre",
+    "already_have_account": "Vous avez déjà un compte ? ",
+    "account_created": "✓ Compte créé ! Veuillez vous connecter.",
+    "login_required": "Vous devez être connecté"
+  },
+  "common": {
+    "logout": "Se Déconnecter",
+    "logout_confirmation": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "cancel": "Annuler",
+    "logged_out_successfully": "Déconnexion réussie",
+    "loading": "Chargement...",
+    "no_information": "Aucune information disponible",
+    "unknown_error": "Une erreur inconnue s'est produite",
+    "retry": "Réessayer",
+    "no_data": "Aucune donnée disponible",
+    "show_all": "Tout Afficher"
+  },
+  "treatment_sections": {
+    "symptoms": "Symptômes",
+    "treatments": "Traitements",
+    "recommended_products": "Produits Recommandés",
+    "prevention_tips": "Conseils de Prévention"
+  },
+  "disease": {
+    "symptoms_detected": "Symptômes Détectés",
+    "observed_symptoms": "Symptômes Observés",
+    "info_message": "Ce diagnostic est assisté par IA. Confirmez avec un expert agricole si les symptômes persistent.",
+    "view_treatment": "Voir le Traitement"
+  }
+}
