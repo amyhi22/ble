@@ -3,7 +3,7 @@ import '../models/detection_history.dart';
 
 class HistoryDatabase {
   static const String _boxName = 'detection_history';
-  static Box<DetectionHistory>? _historyBox;  // ✅ Make nullable for safety check
+  static Box<DetectionHistory>? _historyBox;
 
   /// Initialize Hive box for history
   static Future<void> init() async {
@@ -13,7 +13,7 @@ class HistoryDatabase {
     _historyBox = await Hive.openBox<DetectionHistory>(_boxName);
   }
 
-  /// ✅ Helper: Ensure box is initialized before use (prevents LateInitializationError)
+  /// Ensure box is initialized before use
   static Box<DetectionHistory> get _box {
     if (_historyBox == null) {
       throw StateError(
@@ -24,24 +24,41 @@ class HistoryDatabase {
     return _historyBox!;
   }
 
-  /// ✅ Save detection with userId (data isolation)
+  /// Save detection with userId
   static Future<void> saveDetection(DetectionHistory detection) async {
     await _box.put(detection.id, detection);
   }
 
-  /// ✅ Get history for SPECIFIC USER ONLY (data isolation)
+  /// Prevent duplicate saves for the same disease on the same day
+  static bool alreadyExistsToday({
+    required String userId,
+    required String diseaseName,
+  }) {
+    final now = DateTime.now();
+
+    return _box.values.any((item) {
+      return item.userId == userId &&
+          item.diseaseName.toLowerCase() == diseaseName.toLowerCase() &&
+          item.timestamp.year == now.year &&
+          item.timestamp.month == now.month &&
+          item.timestamp.day == now.day;
+    });
+  }
+
+  /// Get history for a specific user only
   static List<DetectionHistory> getUserHistory(String userId) {
     final allItems = _box.values.toList();
-    // ✅ FILTER: Only return items belonging to this user
+
     final userItems = allItems
         .where((item) => item.userId == userId)
         .toList();
-    // Sort by date (newest first)
+
     userItems.sort((a, b) => b.timestamp.compareTo(a.timestamp));
+
     return userItems;
   }
 
-  /// ✅ Get recent history for specific user
+  /// Get recent history for a specific user
   static List<DetectionHistory> getUserRecentHistory({
     required String userId,
     int limit = 5,
@@ -49,18 +66,22 @@ class HistoryDatabase {
     return getUserHistory(userId).take(limit).toList();
   }
 
-  /// ✅ Delete a history item (with ownership check)
-  static Future<bool> deleteHistory(String id, String userId) async {
+  /// Delete a history item (ownership check)
+  static Future<bool> deleteHistory(
+      String id,
+      String userId,
+      ) async {
     final item = _box.get(id);
-    // ✅ Security: Only allow user to delete their own items
+
     if (item == null || item.userId != userId) {
       return false;
     }
+
     await _box.delete(id);
     return true;
   }
 
-  /// ✅ Clear history for specific user
+  /// Clear history for a specific user
   static Future<void> clearUserHistory(String userId) async {
     final keysToDelete = _box.values
         .where((item) => item.userId == userId)
@@ -77,7 +98,7 @@ class HistoryDatabase {
     return _box.values.any((item) => item.userId == userId);
   }
 
-  /// Get count of history items for specific user
+  /// Get count of history items for a specific user
   static int getUserHistoryCount(String userId) {
     return _box.values
         .where((item) => item.userId == userId)
@@ -87,6 +108,6 @@ class HistoryDatabase {
   /// Stream for real-time updates
   static Stream<BoxEvent> get historyStream => _box.watch();
 
-  /// Check if database is initialized (for debugging)
+  /// Check if database is initialized
   static bool get isInitialized => _historyBox != null;
 }

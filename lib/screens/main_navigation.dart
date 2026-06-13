@@ -8,6 +8,7 @@ import 'home_screen.dart';
 import 'camera_screen.dart';
 import 'profile_screen.dart';
 import 'login_screen.dart';
+import 'ai_chat_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -23,6 +24,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   final List<Widget> _screens = const [
     HomeScreen(),
     CameraScreen(),
+    AIChatScreen(),
     ProfileScreen(),
   ];
 
@@ -62,49 +64,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     );
   }
 
-  Future<void> _handleLogout() async {
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        backgroundColor: const Color(0xFFF5F7F5),
-        title: Text(
-          context.tr('common.logout'),
-          style: const TextStyle(color: Color(0xFF594020)),
-        ),
-        content: Text(
-          context.tr('common.logout_confirmation'),
-          style: const TextStyle(color: Color(0xFF6B5D4F)),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: Text(context.tr('common.cancel')),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, true),
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.red,
-            ),
-            child: Text(context.tr('common.logout')),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed == true && mounted) {
-      await SessionService.logout();
-      _redirectToLogin();
-
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(context.tr('common.logged_out_successfully')),
-          backgroundColor: const Color(0xFF768E2E),
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -158,9 +117,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             color: _currentIndex == 1 ? Colors.white : Colors.black54,
           ),
           Icon(
-            Icons.person_rounded,
+            Icons.chat_bubble_rounded,
             size: 28,
             color: _currentIndex == 2 ? Colors.white : Colors.black54,
+          ),
+          Icon(
+            Icons.person_rounded,
+            size: 28,
+            color: _currentIndex == 3 ? Colors.white : Colors.black54,
           ),
         ],
         onTap: (index) {

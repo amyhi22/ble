@@ -1,33 +1,33 @@
 import 'irrigation_result.dart';
 
-/// Handles disease-specific irrigation adjustments
+/// يتعامل مع تعديلات الري الخاصة بالأمراض
 ///
-/// Supported labels:
-/// - Aphid
-/// - Black Rust
-/// - Blast
-/// - Brown Rust
-/// - Common Root Rot
-/// - Fusarium Head Blight
-/// - Healthy
-/// - Leaf Blight
-/// - Mildew
-/// - Mite
-/// - Septoria
-/// - Smut
-/// - Stem fly
-/// - Tan spot
-/// - Yellow Rust
+/// التصنيفات المدعومة:
+/// - حشرة المن (Aphid)
+/// - الصدأ الأسود (Black Rust)
+/// - اللفحة (Blast)
+/// - الصدأ البني (Brown Rust)
+/// - تعفن الجذور الشائع (Common Root Rot)
+/// - لفحة رأس السنبلة الفيوزارية (Fusarium Head Blight)
+/// - سليم (Healthy)
+/// - لفحة الأوراق (Leaf Blight)
+/// - البياض الدقيقي (Mildew)
+/// - العث (Mite)
+/// - السبتوريا (Septoria)
+/// - التفحم (Smut)
+/// - ذبابة الساق (Stem fly)
+/// - تان سبوت (Tan spot)
+/// - الصدأ الأصفر (Yellow Rust)
 class DiseaseFactorEngine {
-  /// Get adjustment factor for specific disease
+  /// الحصول على عامل التعديل لمرض معين
   ///
-  /// Returns: DiseaseAdjustmentFactor with multiplicative factor
+  /// النتيجة: DiseaseAdjustmentFactor مع عامل ضربي
   static DiseaseAdjustmentFactor getAdjustmentFactor(
       String diseaseName) {
     final normalized = diseaseName.trim().toLowerCase();
 
     // =========================
-    // RUST DISEASES
+    // أمراض الصدأ
     // =========================
     if (normalized.contains('black rust') ||
         normalized.contains('brown rust') ||
@@ -36,144 +36,144 @@ class DiseaseFactorEngine {
         diseaseName: diseaseName,
         factor: 0.90,
         rationale:
-        'Rust diseases spread faster in humid conditions; slightly reduce irrigation to minimize leaf wetness.',
+        'أمراض الصدأ تنتشر بشكل أسرع في الظروف الرطبة؛ قلل الري قليلاً لتقليل رطوبة الأوراق.',
       );
     }
 
     // =========================
-    // SEPTORIA
+    // السبتوريا
     // =========================
     if (normalized.contains('septoria')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.75,
         rationale:
-        'Septoria thrives in wet conditions; significantly reduce irrigation to reduce disease pressure.',
+        'السبتوريا تزدهر في الظروف الرطبة؛ قلل الري بشكل كبير لتقليل ضغط المرض.',
       );
     }
 
     // =========================
-    // MILDEW
+    // البياض الدقيقي
     // =========================
     if (normalized.contains('mildew')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 1.0,
         rationale:
-        'Mildew is less affected by irrigation amount; maintain normal watering with good airflow.',
+        'البياض الدقيقي لا يتأثر كثيراً بكمية الري؛ حافظ على الري المعتاد مع تهوية جيدة.',
       );
     }
 
     // =========================
-    // TAN SPOT
+    // تان سبوت
     // =========================
     if (normalized.contains('tan spot')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.85,
         rationale:
-        'Tan Spot spreads under prolonged moisture; moderate irrigation reduction recommended.',
+        'تان سبوت ينتشر في ظروف الرطوبة المطولة؛ يُنصح بتخفيض معتدل للري.',
       );
     }
 
     // =========================
-    // BLAST
+    // اللفحة (Blast)
     // =========================
     if (normalized.contains('blast')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.80,
         rationale:
-        'Blast disease develops rapidly in humid environments; reduce irrigation frequency.',
+        'مرض اللفحة يتطور بسرعة في البيئات الرطبة؛ قلل تكرار الري.',
       );
     }
 
     // =========================
-    // FUSARIUM HEAD BLIGHT
+    // لفحة رأس السنبلة الفيوزارية
     // =========================
     if (normalized.contains('fusarium')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.80,
         rationale:
-        'Fusarium Head Blight favors wet and humid conditions; reduce excess irrigation.',
+        'لفحة رأس السنبلة الفيوزارية تفضل الظروف الرطبة؛ قلل الري الزائد.',
       );
     }
 
     // =========================
-    // LEAF BLIGHT
+    // لفحة الأوراق
     // =========================
     if (normalized.contains('leaf blight')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.85,
         rationale:
-        'Leaf Blight severity increases with leaf wetness; moderate irrigation reduction recommended.',
+        'تزداد شدة لفحة الأوراق مع رطوبة الأوراق؛ يُنصح بتخفيض معتدل للري.',
       );
     }
 
     // =========================
-    // ROOT ROT
+    // تعفن الجذور
     // =========================
     if (normalized.contains('root rot')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.70,
         rationale:
-        'Root Rot is strongly linked to overwatering and poor drainage; reduce irrigation significantly.',
+        'تعفن الجذور مرتبط بشكل كبير بالإفراط في الري وضعف الصرف؛ قلل الري بشكل كبير.',
       );
     }
 
     // =========================
-    // SMUT
+    // التفحم
     // =========================
     if (normalized.contains('smut')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 0.95,
         rationale:
-        'Smut diseases are weakly related to irrigation; slight reduction applied as precaution.',
+        'أمراض التفحم مرتبطة بشكل ضعيف بالري؛ يتم تطبيق تخفيض طفيف كإجراء احترازي.',
       );
     }
 
     // =========================
-    // APHID
+    // حشرة المن
     // =========================
     if (normalized.contains('aphid')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 1.05,
         rationale:
-        'Aphid infestation may stress plants; maintain slightly higher hydration for recovery.',
+        'الإصابة بحشرة المن قد تُضعف النبات؛ حافظ على رطوبة أعلى قليلاً للمساعدة في التعافي.',
       );
     }
 
     // =========================
-    // MITE
+    // العث
     // =========================
     if (normalized.contains('mite')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 1.10,
         rationale:
-        'Mites thrive in dry conditions; slightly increase irrigation and humidity near soil level.',
+        'العث يزدهر في الظروف الجافة؛ زد الري والرطوبة قليلاً عند مستوى التربة.',
       );
     }
 
     // =========================
-    // STEM FLY
+    // ذبابة الساق
     // =========================
     if (normalized.contains('stem fly')) {
       return DiseaseAdjustmentFactor(
         diseaseName: diseaseName,
         factor: 1.0,
         rationale:
-        'Stem fly damage is not strongly affected by irrigation levels.',
+        'أضرار ذبابة الساق لا تتأثر بشكل كبير بمستويات الري.',
       );
     }
 
     // =========================
-    // HEALTHY
+    // سليم
     // =========================
     if (normalized == 'healthy' ||
         normalized.contains('healthy')) {
@@ -181,138 +181,138 @@ class DiseaseFactorEngine {
         diseaseName: diseaseName,
         factor: 1.0,
         rationale:
-        'Plant is healthy; standard irrigation practices apply.',
+        'النبات سليم؛ تُطبق ممارسات الري المعتادة.',
       );
     }
 
     // =========================
-    // UNKNOWN DISEASE
+    // مرض غير معروف
     // =========================
     return DiseaseAdjustmentFactor(
       diseaseName: diseaseName,
       factor: 0.95,
       rationale:
-      'Unknown condition detected; applying conservative irrigation adjustment.',
+      'تم اكتشاف حالة غير معروفة؛ يتم تطبيق تعديل ري متحفظ.',
     );
   }
 
-  /// Get disease-specific recommendations
+  /// الحصول على التوصيات الخاصة بالمرض
   static List<String> getDiseaseSpecificRecommendations(
       String diseaseName) {
     final normalized = diseaseName.trim().toLowerCase();
 
-    // Rust diseases
+    // أمراض الصدأ
     if (normalized.contains('rust')) {
       return [
-        'Avoid overhead irrigation',
-        'Water early morning only',
-        'Reduce leaf wetness duration',
-        'Monitor disease spread weekly',
+        'تجنب الري العلوي',
+        'الري في الصباح الباكر فقط',
+        'تقليل مدة رطوبة الأوراق',
+        'مراقبة انتشار المرض أسبوعياً',
       ];
     }
 
-    // Septoria
+    // السبتوريا
     if (normalized.contains('septoria')) {
       return [
-        'Use drip irrigation only',
-        'Improve field drainage',
-        'Remove infected leaves',
-        'Increase air circulation',
+        'استخدم الري بالتنقيط فقط',
+        'تحسين تصريف الحقل',
+        'إزالة الأوراق المصابة',
+        'زيادة التهوية',
       ];
     }
 
-    // Mildew
+    // البياض الدقيقي
     if (normalized.contains('mildew')) {
       return [
-        'Avoid excessive humidity',
-        'Ensure good airflow',
-        'Apply preventive fungicide',
-        'Water at soil level only',
+        'تجنب الرطوبة الزائدة',
+        'تأكد من وجود تهوية جيدة',
+        'استخدم مبيد فطري وقائي',
+        'الري عند مستوى التربة فقط',
       ];
     }
 
-    // Root Rot
+    // تعفن الجذور
     if (normalized.contains('root rot')) {
       return [
-        'Reduce irrigation immediately',
-        'Improve soil drainage',
-        'Avoid waterlogging',
-        'Inspect roots regularly',
+        'قلل الري على الفور',
+        'حسّن تصريف التربة',
+        'تجنب تشبع التربة بالماء',
+        'افحص الجذور بشكل منتظم',
       ];
     }
 
-    // Blast
+    // اللفحة
     if (normalized.contains('blast')) {
       return [
-        'Avoid excess nitrogen fertilizer',
-        'Reduce irrigation frequency',
-        'Monitor humidity carefully',
-        'Apply fungicide if needed',
+        'تجنب الإفراط في استخدام الأسمدة النيتروجينية',
+        'قلل تكرار الري',
+        'راقب الرطوبة بعناية',
+        'استخدم مبيد فطري عند الحاجة',
       ];
     }
 
-    // Aphid
+    // حشرة المن
     if (normalized.contains('aphid')) {
       return [
-        'Inspect underside of leaves',
-        'Use biological pest control',
-        'Avoid plant stress',
-        'Monitor infestation daily',
+        'افحص الجانب السفلي للأوراق',
+        'استخدم المكافحة البيولوجية للآفات',
+        'تجنب إجهاد النبات',
+        'راقب الإصابة يومياً',
       ];
     }
 
-    // Mite
+    // العث
     if (normalized.contains('mite')) {
       return [
-        'Increase humidity slightly',
-        'Inspect leaves for webbing',
-        'Avoid drought stress',
-        'Apply appropriate pesticide if necessary',
+        'زد الرطوبة قليلاً',
+        'افحص الأوراق بحثاً عن الشبكات',
+        'تجنب الإجهاد الناتج عن الجفاف',
+        'استخدم المبيد المناسب إذا لزم الأمر',
       ];
     }
 
-    // Healthy
+    // سليم
     if (normalized.contains('healthy')) {
       return [
-        'Maintain regular irrigation schedule',
-        'Monitor soil moisture regularly',
-        'Apply preventive care practices',
-        'Inspect crops weekly',
+        'حافظ على جدول الري المعتاد',
+        'راقب رطوبة التربة بانتظام',
+        'طبّق ممارسات الرعاية الوقائية',
+        'افحص المحاصيل أسبوعياً',
       ];
     }
 
     return [
-      'Confirm diagnosis with agricultural expert',
-      'Monitor crop condition closely',
-      'Document disease progression',
-      'Adjust irrigation conservatively',
+      'تأكيد التشخيص مع خبير زراعي',
+      'مراقبة حالة المحصول بشكل دقيق',
+      'توثيق تطور المرض',
+      'تعديل الري بشكل متحفظ',
     ];
   }
 
-  /// Get optimal irrigation timing based on disease
+  /// الحصول على التوقيت الأمثل للري بناءً على المرض
   static String getOptimalIrrigationTiming(
       String diseaseName) {
     final normalized = diseaseName.trim().toLowerCase();
 
-    // Moisture-sensitive diseases
+    // الأمراض الحساسة للرطوبة
     if (normalized.contains('rust') ||
         normalized.contains('septoria') ||
         normalized.contains('blast') ||
         normalized.contains('blight') ||
         normalized.contains('fusarium')) {
-      return 'Early morning (5-7 AM) to allow rapid drying of foliage';
+      return 'الصباح الباكر (5-7 صباحاً) للسماح بتجفيف الأوراق بسرعة';
     }
 
-    // Root diseases
+    // أمراض الجذور
     if (normalized.contains('root rot')) {
-      return 'Morning only with controlled low-volume irrigation';
+      return 'الصباح فقط مع ري منخفض الحجم ومتحكم به';
     }
 
-    // Mites
+    // العث
     if (normalized.contains('mite')) {
-      return 'Late evening with moderate soil moisture maintenance';
+      return 'المساء المتأخر مع الحفاظ على رطوبة تربة معتدلة';
     }
 
-    return 'Early morning or late evening with soil-level irrigation';
+    return 'الصباح الباكر أو المساء المتأخر مع الري عند مستوى التربة';
   }
 }

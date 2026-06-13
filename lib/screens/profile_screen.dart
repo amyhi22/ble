@@ -5,7 +5,8 @@ import '../services/session_service.dart';
 import '../services/auth_service.dart';
 import '../models/user_model.dart';
 import 'login_screen.dart';
-import 'language_settings_screen.dart';
+import 'scan_history_screen.dart';
+import 'settings_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -69,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => const LoginScreen()),
-        (route) => false,
+            (route) => false,
       );
     }
   }
@@ -146,7 +147,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         'profile.member_since',
                         namedArgs: {
                           'date':
-                              '${_currentUser!.createdAt.day}/${_currentUser!.createdAt.month}/${_currentUser!.createdAt.year}',
+                          '${_currentUser!.createdAt.day}/${_currentUser!.createdAt.month}/${_currentUser!.createdAt.year}',
                         },
                       ),
                       style: TextStyle(
@@ -158,42 +159,53 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
+
             const SizedBox(height: 24),
+
+            // 📌 Scan History
             _buildActionCard(
               icon: Icons.history_rounded,
               title: context.tr('profile.scan_history'),
               subtitle: context.tr('profile.scan_history_subtitle'),
-              onTap: () {},
-            ),
-            const SizedBox(height: 12),
-            _buildActionCard(
-              icon: Icons.settings_rounded,
-              title: context.tr('profile.settings'),
-              subtitle: context.tr('profile.settings_subtitle'),
-              onTap: () {},
-            ),
-            const SizedBox(height: 12),
-            _buildActionCard(
-              icon: Icons.language_rounded,
-              title: context.tr('profile.language'),
-              subtitle: context.tr('profile.language_subtitle'),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const LanguageSettingsScreen(),
+                    builder: (context) => const ScanHistoryScreen(),
                   ),
                 );
               },
             ),
+
             const SizedBox(height: 12),
+
+            // 📌 Settings
+            _buildActionCard(
+              icon: Icons.settings_rounded,
+              title: context.tr('profile.settings'),
+              subtitle: context.tr('profile.settings_subtitle'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SettingsScreen(),
+                  ),
+                );
+              },
+            ),
+
+            const SizedBox(height: 12),
+
+            // 📌 Help
             _buildActionCard(
               icon: Icons.help_outline_rounded,
               title: context.tr('profile.help_support'),
               subtitle: context.tr('profile.help_support_subtitle'),
               onTap: () {},
             ),
+
             const SizedBox(height: 24),
+
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(

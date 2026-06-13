@@ -201,11 +201,6 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: _refreshWeather,
         ),
 
-        // ── Logout ──
-        IconButton(
-          icon: const Icon(Icons.logout, color: Colors.white),
-          onPressed: _logout,
-        ),
       ],
     );
   }
@@ -277,15 +272,5 @@ class _HomeScreenState extends State<HomeScreen> {
     await HistoryDatabase.deleteHistory(id, userId);
     _loadHistory();
   }
-
-  // ── Logout ─────────────────────────────────────────────────────
-  Future<void> _logout() async {
-    await SessionService.logout();
-    if (!mounted) return;
-    Navigator.pushAndRemoveUntil(
-      context,
-      MaterialPageRoute(builder: (_) => const LoginScreen()),
-      (route) => false,
-    );
-  }
 }
+
