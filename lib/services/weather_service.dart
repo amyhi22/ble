@@ -42,9 +42,18 @@ class WeatherService {
       throw Exception("Permission denied forever");
     }
 
-    return await Geolocator.getCurrentPosition(
-      desiredAccuracy: LocationAccuracy.high,
-    );
+    try {
+      // دقة متوسطة + حد زمني 8 ثواني بدل الانتظار اللامحدود
+      return await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.medium,
+        timeLimit: const Duration(seconds: 8),
+      );
+    } catch (_) {
+      // إذا تأخر الحصول على الموقع الحالي، استعمل آخر موقع معروف فوراً
+      final last = await Geolocator.getLastKnownPosition();
+      if (last != null) return last;
+      rethrow;
+    }
   }
 
   // ─────────────────────────────────────────

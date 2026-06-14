@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-
 import 'ai/irrigation/irrigation_service.dart';
 
 import 'models/disease_data.dart';
@@ -14,7 +13,8 @@ import 'models/detection_history.dart';
 import 'database/disease_database.dart';
 import 'database/history_database.dart';
 
-import 'screens/splash_screen.dart';
+import 'screens/login_screen.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -134,7 +134,7 @@ class _AgroScanAppState extends State<AgroScanApp> {
         fontFamily: 'Roboto',
       ),
 
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }
