@@ -146,7 +146,7 @@ class _LoginScreenState extends State<LoginScreen>
                     height: 230,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/images/logo(2).png'),
+                        image: AssetImage('assets/images/logo3.png'),
                         fit: BoxFit.contain,
                       ),
                     ),

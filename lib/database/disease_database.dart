@@ -87,10 +87,8 @@ class DiseaseDatabase {
           'Avoid excessive nitrogen fertilization',
         ],
         medicines: const [
-          'Propiconazole 25% EC',
-          'Tebuconazole 250 EC',
-          'Azoxystrobin 23% SC',
-          'Mancozeb 75% WP (preventive)',
+          'استشر متخصصاً زراعياً للحصول على المبيدات المعتمدة.',
+
         ],
         advice: const [
           'Plant early to avoid peak rust season',
